@@ -10,7 +10,7 @@
 
     <meta name="copyright" content="MACode ID, https://macodeid.com/">
 
-    <title>One Health - Medical Center HTML5 Template</title>
+    <title>@yield("title")</title>
 
     <link rel="stylesheet" href="../assets/css/maicons.css">
 
