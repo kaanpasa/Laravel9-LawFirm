@@ -21,9 +21,6 @@ Route::get('/welcome', function () {
 
 Route::get('/', [HomeController::class,'index'])->name('home');
 
-Route::get('/test', [HomeController::class,'test'])->name('test');
-
-Route::get('/param/{id}/{number}', [HomeController::class,'param'])->name('param');
 
 Route::post('/save', [HomeController::class,'save'])->name('save');
 

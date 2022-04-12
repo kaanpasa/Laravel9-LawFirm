@@ -1286,11 +1286,11 @@ a.text-dark:hover, a.text-dark:focus {
   font-size: 32px;
 }
 
-#doctorSlideshow .owl-nav {
+#lawyerSlideshow .owl-nav {
   margin-top: 24px;
 }
 
-.card-doctor {
+.card-lawyer {
   display: block;
   margin: 15px auto;
   width: 100%;
@@ -1301,18 +1301,18 @@ a.text-dark:hover, a.text-dark:focus {
   overflow: hidden;
 }
 
-.card-doctor .text-xl {
+.card-lawyer .text-xl {
   font-weight: 500;
 }
 
-.card-doctor .header {
+.card-lawyer .header {
   position: relative;
   width: 100%;
   height: 260px;
   overflow: hidden;
 }
 
-.card-doctor .header::before {
+.card-lawyer .header::before {
   content: '';
   position: absolute;
   top: 0;
@@ -1324,11 +1324,11 @@ a.text-dark:hover, a.text-dark:focus {
   transition: opacity .2s linear;
 }
 
-.card-doctor:hover .header::before {
+.card-lawyer:hover .header::before {
   opacity: 1;
 }
 
-.card-doctor .header .meta {
+.card-lawyer .header .meta {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1340,13 +1340,13 @@ a.text-dark:hover, a.text-dark:focus {
   transition: all .2s ease;
 }
 
-.card-doctor:hover .header .meta {
+.card-lawyer:hover .header .meta {
   bottom: 15px;
   visibility: visible;
   opacity: 1;
 }
 
-.card-doctor .header .meta a {
+.card-lawyer .header .meta a {
   display: inline-block;
   margin: 3px;
   width: 40px;
@@ -1360,17 +1360,17 @@ a.text-dark:hover, a.text-dark:focus {
   transition: all .2s ease;
 }
 
-.card-doctor .header .meta a:hover {
+.card-lawyer .header .meta a:hover {
   text-decoration: none;
   background-color: #6E807A;
   color: #fff;
 }
 
-.card-doctor .header img {
+.card-lawyer .header img {
   width: 100%;
 }
 
-.card-doctor .body {
+.card-lawyer .body {
   padding: 15px 20px;
 }
 

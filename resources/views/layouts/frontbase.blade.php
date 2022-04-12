@@ -8,19 +8,19 @@
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <meta name="copyright" content="MACode ID, https://macodeid.com/">
+    <meta name="copyright" content="Kaan Pasa, https://github.com/kaanpasa">
 
     <title>@yield("title")</title>
 
-    <link rel="stylesheet" href="../assets/css/maicons.css">
+    <link rel="stylesheet" href="/assets/css/maicons.css">
 
-    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap.css">
 
-    <link rel="stylesheet" href="../assets/vendor/owl-carousel/css/owl.carousel.css">
+    <link rel="stylesheet" href="/vendor/owl-carousel/css/owl.carousel.css">
 
-    <link rel="stylesheet" href="../assets/vendor/animate/animate.css">
+    <link rel="stylesheet" href="/vendor/animate/animate.css">
 
-    <link rel="stylesheet" href="../assets/css/theme.css">
+    <link rel="stylesheet" href="/assets/css/theme.css">
 </head>
 <body>
 @include("home.header")
@@ -29,8 +29,8 @@
 @show
 
 <div class="container">
-    @yield('content')
     @include("home.slider")
+    @yield('content')
 </div>
 @include("home.footer")
 @yield('foot')

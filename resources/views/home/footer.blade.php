@@ -16,45 +16,44 @@
                     <li><a href="#">Terms & Condition</a></li>
                     <li><a href="#">Privacy</a></li>
                     <li><a href="#">Advertise</a></li>
-                    <li><a href="#">Join as Doctors</a></li>
+                    <li><a href="#">Join as Lawyers</a></li>
                 </ul>
             </div>
             <div class="col-sm-6 col-lg-3 py-3">
-                <h5>Our partner</h5>
+                <h5>Our partners</h5>
                 <ul class="footer-menu">
-                    <li><a href="#">One-Fitness</a></li>
-                    <li><a href="#">One-Drugs</a></li>
-                    <li><a href="#">One-Live</a></li>
+                    <li><a href="#">Pasa-Energy</a></li>
+                    <li><a href="#">Pasa-Insurance</a></li>
+                    <li><a href="#">Pasa-RealEstate</a></li>
                 </ul>
             </div>
             <div class="col-sm-6 col-lg-3 py-3">
                 <h5>Contact</h5>
-                <p class="footer-link mt-2">351 Willow Street Franklin, MA 02038</p>
-                <a href="#" class="footer-link">701-573-7582</a>
-                <a href="#" class="footer-link">healthcare@temporary.net</a>
+                <p class="footer-link mt-2">Karabuk University Teknokent, Karabuk/Karabuk, Turkey</p>
+                <a href="#" class="footer-link">553-136-8640</a><br>
+                <a href="#" class="footer-link">info@pasaconsulting.com</a>
 
                 <h5 class="mt-3">Social Media</h5>
                 <div class="footer-sosmed mt-3">
-                    <a href="#" target="_blank"><span class="mai-logo-facebook-f"></span></a>
-                    <a href="#" target="_blank"><span class="mai-logo-twitter"></span></a>
-                    <a href="#" target="_blank"><span class="mai-logo-google-plus-g"></span></a>
-                    <a href="#" target="_blank"><span class="mai-logo-instagram"></span></a>
-                    <a href="#" target="_blank"><span class="mai-logo-linkedin"></span></a>
+                    <a href="https://www.facebook.com/krbkuni" target="_blank"><span class="mai-logo-facebook-f"></span></a>
+                    <a href="htpps://twitter.com/krbkuni" target="_blank"><span class="mai-logo-twitter"></span></a>
+                    <a href="https://instagram.com/kaannpasa" target="_blank"><span class="mai-logo-instagram"></span></a>
+                    <a href="https://linkedin.com/in/kaanpasa" target="_blank"><span class="mai-logo-linkedin"></span></a>
                 </div>
             </div>
         </div>
 
         <hr>
 
-        <p id="copyright">Copyright &copy; 2020 <a href="https://macodeid.com/" target="_blank">MACode ID</a>. All right reserved</p>
+        <p id="copyright">Copyright &copy; 2022 <a href="https://github.com/kaanpasa" target="_blank">Kaan Pasa</a>. All right reserved</p>
     </div>
 </footer>
-<script src="../assets/js/jquery-3.5.1.min.js"></script>
+<script src="/assets/js/jquery-3.5.1.min.js"></script>
 
-<script src="../assets/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
 
-<script src="../assets/vendor/owl-carousel/js/owl.carousel.min.js"></script>
+<script src="/vendor/owl-carousel/js/owl.carousel.min.js"></script>
 
-<script src="../assets/vendor/wow/wow.min.js"></script>
+<script src="/vendor/wow/wow.min.js"></script>
 
-<script src="../assets/js/theme.js"></script>
+<script src="/assets/js/theme.js"></script>

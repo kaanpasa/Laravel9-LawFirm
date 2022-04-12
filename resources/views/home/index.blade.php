@@ -1,10 +1,10 @@
 @extends('layouts.frontbase')
 
-@section('title', 'Law Firm')
+@section('title', 'Pasa Consulting')
 
 
 @section('content')
-
+    <!-- Haberler bölümü -->
     <div class="page-section bg-light">
         <div class="container">
             <h1 class="text-center wow fadeInUp">Latest News</h1>
@@ -13,21 +13,21 @@
                     <div class="card-blog">
                         <div class="header">
                             <div class="post-category">
-                                <a href="#">Covid19</a>
+                                <a href="#">Bar</a>
                             </div>
                             <a href="blog-details.html" class="post-thumb">
                                 <img src="../assets/img/blog/blog_1.jpg" alt="">
                             </a>
                         </div>
                         <div class="body">
-                            <h5 class="post-title"><a href="blog-details.html">List of Countries without Coronavirus case</a></h5>
+                            <h5 class="post-title"><a href="blog-details.html">Critical AYM selection from bar association presidents</a></h5>
                             <div class="site-info">
                                 <div class="avatar mr-2">
                                     <div class="avatar-img">
-                                        <img src="../assets/img/person/person_1.jpg" alt="">
+                                        <img src="/assets/img/person/pasa.jpeg" alt="">
                                     </div>
-                                    <span>Roger Adams</span>
-                                </div>
+                                    <span>Kaan Pasa</span>
+                                </div><!--https://www.gazeteduvar.com.tr/baro-baskanlarindan-kritik-aym-secimi-32-avukat-adaylik-icin-basvurdu-haber-1548122-->
                                 <span class="mai-time"></span> 1 week ago
                             </div>
                         </div>
