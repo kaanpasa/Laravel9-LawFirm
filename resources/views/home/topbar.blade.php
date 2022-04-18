@@ -1,6 +1,6 @@
 <!--Slogan-->
 <div class="bg-light">
-    <div class="page-hero bg-image overlay-dark" style="background-image: url(../assets/img/banner.jpg);">
+    <div class="page-hero bg-image overlay-dark" style="background-image: url(/assets/img/banner.jpg);">
         <div class="hero-section">
             <div class="container text-center wow zoomIn">
                 <span class="subhead">Justice at right time</span>

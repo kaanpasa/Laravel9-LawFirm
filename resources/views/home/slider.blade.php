@@ -4,15 +4,11 @@
     <div class="container">
         <h1 class="text-center mb-5 wow fadeInUp">Our Lawyers</h1>
 
-        <div class="owl-carousel wow fadeInUp" id="doctorSlideshow">
-            <div class="item">
+        <div class="row wow fadeInUp" id="lawyerSlideshow">
+            <div class="item" style="width:20%">
                 <div class="card-lawyer">
                     <div class="header">
                         <img src="/assets/img/lawyers/davis.jpg" alt="Brian R. Davis">
-                        <div class="meta">
-                            <a href="#"><span class="mai-call"></span></a>
-                            <a href="#"><span class="mai-logo-whatsapp"></span></a>
-                        </div>
                     </div>
                     <div class="body">
                         <p class="text-xl mb-0">Brian R. Davis</p>
@@ -20,14 +16,10 @@
                     </div>
                 </div>
             </div>
-            <div class="item">
+            <div class="item" style="width:20%">
                 <div class="card-lawyer">
                     <div class="header">
                         <img src="/assets/img/lawyers/kastan.jpg" alt="">
-                        <div class="meta">
-                            <a href="#"><span class="mai-call"></span></a>
-                            <a href="#"><span class="mai-logo-whatsapp"></span></a>
-                        </div>
                     </div>
                     <div class="body">
                         <p class="text-xl mb-0">Joshua N. Kastan</p>
@@ -35,14 +27,10 @@
                     </div>
                 </div>
             </div>
-            <div class="item">
+            <div class="item" style="width:20%">
                 <div class="card-lawyer">
                     <div class="header">
                         <img src="/assets/img/lawyers/oconnor.jpg" alt="">
-                        <div class="meta">
-                            <a href="#"><span class="mai-call"></span></a>
-                            <a href="#"><span class="mai-logo-whatsapp"></span></a>
-                        </div>
                     </div>
                     <div class="body">
                         <p class="text-xl mb-0">Melissa L. O'Connor</p>
@@ -50,14 +38,10 @@
                     </div>
                 </div>
             </div>
-            <div class="item">
+            <div class="item" style="width:20%">
                 <div class="card-lawyer">
                     <div class="header">
                         <img src="/assets/img/lawyers/mclay.jpg" alt="">
-                        <div class="meta">
-                            <a href="#"><span class="mai-call"></span></a>
-                            <a href="#"><span class="mai-logo-whatsapp"></span></a>
-                        </div>
                     </div>
                     <div class="body">
                         <p class="text-xl mb-0">Robert S. Mclay</p>
@@ -65,14 +49,10 @@
                     </div>
                 </div>
             </div>
-            <div class="item">
+            <div class="item" style="width:20%">
                 <div class="card-lawyer">
                     <div class="header">
                         <img src="/assets/img/lawyers/ross.jpg" alt="">
-                        <div class="meta">
-                            <a href="#"><span class="mai-call"></span></a>
-                            <a href="#"><span class="mai-logo-whatsapp"></span></a>
-                        </div>
                     </div>
                     <div class="body">
                         <p class="text-xl mb-0">Jessica J. Ross</p>

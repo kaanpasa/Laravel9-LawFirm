@@ -7,13 +7,13 @@
                     <div class="site-info">
                         <a href="#"><span class="mai-call text-primary"></span> +90 553 136 8650</a>
                         <span class="divider">|</span>
-                        <a href="#"><span class="mai-mail text-primary"></span>info@pasaconsulting.com</a>
+                        <a href="mailto:info@pasaconsulting.com"><span class="mai-mail text-primary"></span>info@pasaconsulting.com</a>
                     </div>
                 </div>
                 <div class="col-sm-4 text-right text-sm">
                     <div class="social-mini-button">
-                        <a href="#"><span class="mai-logo-facebook-f"></span></a>
-                        <a href="#"><span class="mai-logo-twitter"></span></a>
+                        <a href="https://www.facebook.com/krbkuni" target="_blank"><span class="mai-logo-facebook-f"></span></a>
+                        <a href="htpps://twitter.com/krbkuni" target="_blank"><span class="mai-logo-twitter"></span></a>
                         <a href="https://instagram.com/kaannpasa" target="_blank"><span class="mai-logo-instagram"></span></a>
                     </div>
                 </div>

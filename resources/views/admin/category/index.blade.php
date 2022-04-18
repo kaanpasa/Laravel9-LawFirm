@@ -1,14 +1,13 @@
 @extends('layouts.adminbase')
 
-@section('title', 'Admin Panel')
+@section('title', 'Category List')
 
 @section('content')
 
         <div id="page-inner">
             <div class="row">
                 <div class="col-md-12">
-                    <h2>Blank Page</h2>
-                    <h5>Welcome Kaan Pasa , Love to see you back. </h5>
+                    <h2>Category List</h2>
                 </div>
             </div>
             <hr>

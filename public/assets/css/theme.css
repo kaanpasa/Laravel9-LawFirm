@@ -1286,7 +1286,7 @@ a.text-dark:hover, a.text-dark:focus {
   font-size: 32px;
 }
 
-#lawyerSlideshow .owl-nav {
+#lawyerSlideshow.owl-nav {
   margin-top: 24px;
 }
 
@@ -1765,6 +1765,7 @@ a.text-dark:hover, a.text-dark:focus {
   display: inline-block;
   width: 40px;
   height: 40px;
+  padding-top: 10px;
   line-height: 42px;
   border-radius: 50%;
   text-align: center;
