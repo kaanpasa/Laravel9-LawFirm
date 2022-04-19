@@ -1,21 +1,15 @@
-<!--Slogan-->
 <div class="bg-light">
-    <div class="page-hero bg-image overlay-dark" style="background-image: url(/assets/img/banner.jpg);">
-        <div class="hero-section">
-            <div class="container text-center wow zoomIn">
-                <span class="subhead">Justice at right time</span>
-                <h1 class="display-4">Make Difference</h1>
-                <a href="#" class="btn btn-primary">Let's Consult</a>
-            </div>
-        </div>
-    </div>
     <!--Welcome paragraph -->
     <div class="page-section pb-0">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 py-3 wow fadeInUp">
                     <h1>Welcome to Your Justice<br> Center</h1>
-                    <p class="text-grey mb-4">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Accusantium aperiam earum ipsa eius, inventore nemo labore eaque porro consequatur ex aspernatur. Explicabo, excepturi accusantium! Placeat voluptates esse ut optio facilis!</p>
+                    <p class="text-grey mb-4">
+                        Pasa Law Firm, founded in Karabük by Lawyer Kaan Pasa; It provides advocacy and legal consultancy services to its domestic and foreign clients in various fields of law, together with its expert lawyer staff. Pasa Law Firm, which has adopted the understanding of knowledgeable, relevant and fast legal service since the day it was founded, aims to provide the best legal service to its clients in order to obtain their rights.
+
+                        Pasa Law Firm has a solution partnership network with many law firms, lawyers and professional organizations in Turkey and abroad. For this reason, he provides legal services in many places, including Turkey and abroad.
+                    </p>
                     <a href="about.html" class="btn btn-primary">Learn More</a>
                 </div>
                 <div class="col-lg-6 wow fadeInRight" data-wow-delay="400ms">

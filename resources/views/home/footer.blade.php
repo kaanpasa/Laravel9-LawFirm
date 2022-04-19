@@ -31,7 +31,7 @@
                 <h5>Contact</h5>
                 <p class="footer-link mt-2">Karabuk University Teknokent, Karabuk/Karabuk, Turkey</p>
                 <a href="#" class="footer-link">553-136-8640</a><br>
-                <a href="#" class="footer-link">info@pasaconsulting.com</a>
+                <a href="#" class="footer-link">info@pasalaw.com</a>
 
                 <h5 class="mt-3">Social Media</h5>
                 <div class="footer-sosmed mt-3">
@@ -58,3 +58,16 @@
 <script src="assets/vendor/wow/wow.min.js"></script>
 
 <script src="/assets/js/theme.js"></script>
+
+<script src="assets/js/slider.js"></script>
+
+<!---- Slider Js ----->
+<script src="assets/js/slider/jquery.min.js"></script>
+
+<script src="assets/js/slider/popper.js"></script>
+
+<script src="assets/js/slider/bootstrap.min.js"></script>
+
+<script src="assets/js/slider/owl.carousel.min.js"></script>
+
+<script src="assets/js/slider/main.js"></script>

@@ -5,3 +5,5 @@
 <script src="/assets/admin/js/jquery.metisMenu.js"></script>
 
 <script src="/assets/admin/js/custom.js"></script>
+
+<script src="/assets/admin/js/morris/morris.js"></script>

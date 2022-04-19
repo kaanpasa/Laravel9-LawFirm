@@ -8,7 +8,7 @@
         </div>
     </nav>
 
-    <nav class="navbar-default navbar-side" role="navigation">
+    <nav class="navbar-default navbar-side col-lg-3" role="navigation">
         <div class="sidebar-collapse">
             <ul class="nav" id="main-menu">
 
@@ -17,7 +17,7 @@
                 </li>
 
                 <li>
-                    <a  href="/TEMP/admin/ui.html"><i class="fa fa-desktop fa-3x"></i> UI Elements</a>
+                    <a  href="/admin/category"><i class="fa fa-desktop fa-3x"></i>Categories</a>
                 </li>
 
                 <li>

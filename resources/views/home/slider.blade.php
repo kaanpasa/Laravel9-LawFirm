@@ -1,62 +1,89 @@
-<!--Our doctors https://www.dkmlawgroup.com/attorneys-->
+<div class="home-slider owl-carousel">
+    <div class="slider-item" style="background-image:url(assets/img/slider/admi-law.jpg);">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text align-items-center justify-content-center">
+                <div class="col-md-12 ftco-animate">
+                    <div class="text w-100 text-center">
+                        <h3 style="font-size: 150px">Administrative Law</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<div class="page-section">
-    <div class="container">
-        <h1 class="text-center mb-5 wow fadeInUp">Our Lawyers</h1>
+    <div class="slider-item" style="background-image:url(assets/img/slider/buss-law.jpg);">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text align-items-center justify-content-center">
+                <div class="col-md-12 ftco-animate">
+                    <div class="text w-100 text-center">
+                        <h3 style="font-size: 150px">Business Law</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <div class="row wow fadeInUp" id="lawyerSlideshow">
-            <div class="item" style="width:20%">
-                <div class="card-lawyer">
-                    <div class="header">
-                        <img src="/assets/img/lawyers/davis.jpg" alt="Brian R. Davis">
-                    </div>
-                    <div class="body">
-                        <p class="text-xl mb-0">Brian R. Davis</p>
-                        <span class="text-sm text-grey">Insurance</span>
+    <div class="slider-item" style="background-image:url(assets/img/slider/civi-law.png);">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text align-items-center justify-content-center">
+                <div class="col-md-12 ftco-animate">
+                    <div class="text w-100 text-center">
+                        <h3 style="font-size: 150px">Civil Law</h3>
                     </div>
                 </div>
             </div>
-            <div class="item" style="width:20%">
-                <div class="card-lawyer">
-                    <div class="header">
-                        <img src="/assets/img/lawyers/kastan.jpg" alt="">
-                    </div>
-                    <div class="body">
-                        <p class="text-xl mb-0">Joshua N. Kastan</p>
-                        <span class="text-sm text-grey">Commercial Litigation</span>
-                    </div>
-                </div>
-            </div>
-            <div class="item" style="width:20%">
-                <div class="card-lawyer">
-                    <div class="header">
-                        <img src="/assets/img/lawyers/oconnor.jpg" alt="">
-                    </div>
-                    <div class="body">
-                        <p class="text-xl mb-0">Melissa L. O'Connor</p>
-                        <span class="text-sm text-grey">Civil Litigation</span>
+        </div>
+    </div>
+
+    <div class="slider-item" style="background-image:url(assets/img/slider/comm-law.jpg);">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text align-items-center justify-content-center">
+                <div class="col-md-12 ftco-animate">
+                    <div class="text w-100 text-center">
+                        <h3 style="font-size: 150px">Commercial Law</h3>
                     </div>
                 </div>
             </div>
-            <div class="item" style="width:20%">
-                <div class="card-lawyer">
-                    <div class="header">
-                        <img src="/assets/img/lawyers/mclay.jpg" alt="">
-                    </div>
-                    <div class="body">
-                        <p class="text-xl mb-0">Robert S. Mclay</p>
-                        <span class="text-sm text-grey">Divorce</span>
+        </div>
+    </div>
+
+    <div class="slider-item" style="background-image:url(assets/img/slider/cons-law.jpg);">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text align-items-center justify-content-center">
+                <div class="col-md-12 ftco-animate">
+                    <div class="text w-100 text-center">
+                        <h3 style="font-size: 150px">Constitutional Law</h3>
                     </div>
                 </div>
             </div>
-            <div class="item" style="width:20%">
-                <div class="card-lawyer">
-                    <div class="header">
-                        <img src="/assets/img/lawyers/ross.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="slider-item" style="background-image:url(assets/img/slider/crim-law.jpg);">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text align-items-center justify-content-center">
+                <div class="col-md-12 ftco-animate">
+                    <div class="text w-100 text-center">
+                        <h3 style="font-size: 150px">Criminal Law</h3>
                     </div>
-                    <div class="body">
-                        <p class="text-xl mb-0">Jessica J. Ross</p>
-                        <span class="text-sm text-grey">Accidents</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slider-item" style="background-image:url(assets/img/slider/tax-law.jpg);">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text align-items-center justify-content-center">
+                <div class="col-md-12 ftco-animate">
+                    <div class="text w-100 text-center">
+                        <h3 style="font-size: 150px">Tax Law</h3>
                     </div>
                 </div>
             </div>
@@ -64,42 +91,4 @@
     </div>
 </div>
 
-<!--Make an Appointment-->
 
-<div class="page-section">
-    <div class="container">
-        <h1 class="text-center wow fadeInUp">Make an Appointment</h1>
-
-        <form class="main-form">
-            <div class="row mt-5 ">
-                <div class="col-12 col-sm-6 py-2 wow fadeInLeft">
-                    <input type="text" class="form-control" placeholder="Full name">
-                </div>
-                <div class="col-12 col-sm-6 py-2 wow fadeInRight">
-                    <input type="text" class="form-control" placeholder="Email address..">
-                </div>
-                <div class="col-12 col-sm-6 py-2 wow fadeInLeft" data-wow-delay="300ms">
-                    <input type="date" class="form-control">
-                </div>
-                <div class="col-12 col-sm-6 py-2 wow fadeInRight" data-wow-delay="300ms">
-                    <select name="departement" id="departement" class="custom-select">
-                        <option value="consulting">Consulting</option>
-                        <option value="insurance">Insurance</option>
-                        <option value="comlit">Commercial Litigation</option>
-                        <option value="civlit">Civil Litigation</option>
-                        <option value="divorce">Divorce</option>
-                        <option value="accidents">Accidents</option>
-                    </select>
-                </div>
-                <div class="col-12 py-2 wow fadeInUp" data-wow-delay="300ms">
-                    <input type="text" class="form-control" placeholder="Number..">
-                </div>
-                <div class="col-12 py-2 wow fadeInUp" data-wow-delay="300ms">
-                    <textarea name="message" id="message" class="form-control" rows="6" placeholder="Enter message.."></textarea>
-                </div>
-            </div>
-
-            <button type="submit" class="btn btn-primary mt-3 wow zoomIn">Submit Request</button>
-        </form>
-    </div>
-</div>

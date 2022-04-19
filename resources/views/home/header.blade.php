@@ -7,7 +7,7 @@
                     <div class="site-info">
                         <a href="#"><span class="mai-call text-primary"></span> +90 553 136 8650</a>
                         <span class="divider">|</span>
-                        <a href="mailto:info@pasaconsulting.com"><span class="mai-mail text-primary"></span>info@pasaconsulting.com</a>
+                        <a href="mailto:info@pasalaw.com"><span class="mai-mail text-primary"></span>info@pasalaw.com</a>
                     </div>
                 </div>
                 <div class="col-sm-4 text-right text-sm">
@@ -23,16 +23,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
         <div class="container">
-            <a class="navbar-brand" href="#"><span class="text-primary">Pasa</span>-Consulting</a>
-
-            <form action="#">
-                <div class="input-group input-navbar">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="icon-addon1"><span class="mai-search"></span></span>
-                    </div>
-                    <input type="text" class="form-control" placeholder="Enter keyword.." aria-label="Username" aria-describedby="icon-addon1">
-                </div>
-            </form>
+            <a class="navbar-brand" href="#"><span class="text-primary">Pasa</span>-Law</a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupport" aria-controls="navbarSupport" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -41,16 +32,19 @@
             <div class="collapse navbar-collapse" id="navbarSupport">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="/#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Us</a>
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Services</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="doctors.html">Lawyers</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="blog.html">News</a>
+                        <a class="nav-link" href="blog.html">Blog</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
