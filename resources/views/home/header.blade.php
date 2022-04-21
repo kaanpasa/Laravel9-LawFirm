@@ -35,10 +35,10 @@
                         <a class="nav-link" href="/#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link" href="/admin">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">Services</a>
+                        <a class="nav-link" href="/admin">Services</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="doctors.html">Lawyers</a>

@@ -1,10 +1,8 @@
 <div id="wrapper">
     <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
         @include("admin.header")
-        <div style="color: white;
-                    padding: 15px 50px 5px 50px;
-                    float: right;
-                    font-size: 16px;"><a href="#" class="btn btn-danger square-btn-adjust">Logout</a>
+        <div style="color: white; padding: 15px 50px 5px 50px; float: right; font-size: 16px;">
+            <a href="#" class="btn btn-danger square-btn-adjust">Logout</a>
         </div>
     </nav>
 
@@ -13,7 +11,7 @@
             <ul class="nav" id="main-menu">
 
                 <li>
-                    <a  href="/TEMP/admin/index.html"><i class="fa fa-dashboard fa-3x"></i> Dashboard</a>
+                    <a  href="/#"><i class="fa fa-dashboard fa-3x"></i> Dashboard</a>
                 </li>
 
                 <li>

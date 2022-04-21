@@ -124,18 +124,18 @@
                                 <a href="#">Bar</a>
                             </div>
                             <a href="blog-details.html" class="post-thumb">
-                                <img src="../assets/img/blog/blog_1.jpg" alt="">
+                                <img src="/assets/img/blog/kripto.jpg" alt="">
                             </a>
                         </div>
                         <div class="body">
-                            <h5 class="post-title"><a href="blog-details.html">Critical AYM selection from bar association presidents</a></h5>
+                            <h5 class="post-title"><a href="blog-details.html">Cancellation of Zoning Plan</a></h5>
                             <div class="site-info">
                                 <div class="avatar mr-2">
                                     <div class="avatar-img">
                                         <img src="/assets/img/person/pasa.jpeg" alt="">
                                     </div>
                                     <span>Kaan Pasa</span>
-                                </div><!--https://www.gazeteduvar.com.tr/baro-baskanlarindan-kritik-aym-secimi-32-avukat-adaylik-icin-basvurdu-haber-1548122-->
+                                </div>
                                 <span class="mai-time"></span> 1 week ago
                             </div>
                         </div>
@@ -148,17 +148,17 @@
                                 <a href="#">Covid19</a>
                             </div>
                             <a href="blog-details.html" class="post-thumb">
-                                <img src="../assets/img/blog/blog_2.jpg" alt="">
+                                <img src="/assets/img/blog/kripto.jpg" alt="">
                             </a>
                         </div>
                         <div class="body">
-                            <h5 class="post-title"><a href="blog-details.html">Recovery Room: News beyond the pandemic</a></h5>
+                            <h5 class="post-title"><a href="blog-details.html">Criptocurrency Law</a></h5>
                             <div class="site-info">
                                 <div class="avatar mr-2">
                                     <div class="avatar-img">
-                                        <img src="../assets/img/person/person_1.jpg" alt="">
+                                        <img src="/assets/img/person/pasa.jpeg" alt="">
                                     </div>
-                                    <span>Roger Adams</span>
+                                    <span>Kaan Pasa</span>
                                 </div>
                                 <span class="mai-time"></span> 4 weeks ago
                             </div>
@@ -172,17 +172,17 @@
                                 <a href="#">Covid19</a>
                             </div>
                             <a href="blog-details.html" class="post-thumb">
-                                <img src="../assets/img/blog/blog_3.jpg" alt="">
+                                <img src="/assets/img//blog/kripto.jpg" alt="">
                             </a>
                         </div>
                         <div class="body">
-                            <h5 class="post-title"><a href="blog-details.html">What is the impact of eating too much sugar?</a></h5>
+                            <h5 class="post-title"><a href="blog-details.html">Work accident Report</a></h5>
                             <div class="site-info">
                                 <div class="avatar mr-2">
                                     <div class="avatar-img">
-                                        <img src="../assets/img/person/person_2.jpg" alt="">
+                                        <img src="/assets/img/person/pasa.jpeg" alt="">
                                     </div>
-                                    <span>Diego Simmons</span>
+                                    <span>Kaan Pasa</span>
                                 </div>
                                 <span class="mai-time"></span> 2 months ago
                             </div>
