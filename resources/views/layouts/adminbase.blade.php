@@ -9,6 +9,8 @@
         <link href="/assets/admin/css/custom.css" rel="stylesheet" />
         <link href="/assets/admin/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
         <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
         @yield('head')
     </head>
 

@@ -8,63 +8,46 @@
 
     <nav class="navbar-default navbar-side col-lg-3" role="navigation">
         <div class="sidebar-collapse">
-            <ul class="nav" id="main-menu">
-
+            <ul class="nav" id="main-menu" style="margin-bottom: 10px">
                 <li>
-                    <a  href="/#"><i class="fa fa-dashboard fa-3x"></i> Dashboard</a>
-                </li>
-
-                <li>
-                    <a  href="/admin/category"><i class="fa fa-desktop fa-3x"></i>Categories</a>
-                </li>
-
-                <li>
-                    <a  href="/TEMP/admin/tab-panel.html"><i class="fa fa-qrcode fa-3x"></i> Tabs & Panels</a>
-                </li>
-
-                <li>
-                    <a  href="/TEMP/admin/chart.html"><i class="fa fa-bar-chart-o fa-3x"></i> Morris Charts</a>
-                </li>
-
-                <li>
-                    <a  href="/TEMP/admin/table.html"><i class="fa fa-table fa-3x"></i> Table Examples</a>
-                </li>
-
-                <li>
-                    <a  href="/TEMP/admin/form.html"><i class="fa fa-edit fa-3x"></i> Forms </a>
-                </li>
-
-                <li>
-                    <a href="#"><i class="fa fa-sitemap fa-3x"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
+                    <a href="#"><ion-icon name="briefcase" size="large"></ion-icon>  Appointments<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="#">Second Level Link</a>
+                            <a href="#">  New Appointments</a>
                         </li>
 
                         <li>
-                            <a href="#">Second Level Link</a>
-                        </li>
-
-                        <li>
-                            <a href="#">Second Level Link<span class="fa arrow"></span></a>
-                            <ul class="nav nav-third-level">
-                                <li>
-                                    <a href="#">Third Level Link</a>
-                                </li>
-
-                                <li>
-                                    <a href="#">Third Level Link</a>
-                                </li>
-
-                                <li>
-                                    <a href="#">Third Level Link</a>
-                                </li>
-                            </ul>
+                            <a href="#">  Completed Appointments</a>
                         </li>
                     </ul>
                 </li>
+
                 <li>
-                    <a class="active-menu"  href="/TEMP/admin/blank.html"><i class="fa fa-square-o fa-3x"></i> Blank Page</a>
+                <a  href="/admin/category"><ion-icon name="albums" size="large"></ion-icon>  Categories</a>
+                </li>
+
+                <li>
+                    <a  href="/admin/service"><ion-icon name="apps" size="large"></ion-icon>  Services</a>
+                </li>
+
+                <li>
+                    <a  href="/admin/users"><ion-icon name="person" size="large"></ion-icon>  Users</a>
+                </li>
+
+                <li>
+                    <a  href="/admin/comments"><ion-icon name="chatbox" size="large"></ion-icon></i>  Comments</a>
+                </li>
+
+                <li>
+                    <a  href="/admin/faq"><ion-icon name="help" size="large"></ion-icon>  FAQ</a>
+                </li>
+
+                <li>
+                    <a  href="/admin/messages"><ion-icon name="chatbubble" size="large"></ion-icon></i>  Messages</a>
+                </li>
+
+                <li>
+                    <a href="/admin/settings"><ion-icon name="settings" size="large"></ion-icon>  Settings</a>
                 </li>
             </ul>
         </div>
