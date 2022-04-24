@@ -49,8 +49,8 @@
                 </table>
             </div>
             <div style="text-align: right">
-            <a href="/admin/category/edit/{{$data->id}}" class="btn btn-info btn-sm">Edit</a>
-            <a href="/admin/category/delete/{{$data->id}}" class="btn btn-danger btn-sm"
+            <a href="{{route('admin.category.edit',['id'=>$data->id])}}" class="btn btn-info btn-sm">Edit</a>
+            <a href="{{route('admin.category.destroy',['id'=>$data->id])}}" class="btn btn-danger btn-sm"
                    onclick="return confirm('Are you sure to delete?')">Delete</a>
             </div>
         </div>

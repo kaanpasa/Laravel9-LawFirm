@@ -15,7 +15,7 @@
                 <div class="panel-body">
                     <div class="row">
                         <div class="col-md-12">
-                            <form role="form" action="/admin/category/update/{{$data->id}}" method="post">
+                            <form role="form" action="{{route('admin.category.update',['id'=>$data->id])}}" method="post">
                                 @csrf
 
                                 <div class="form-group">
