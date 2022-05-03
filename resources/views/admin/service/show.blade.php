@@ -3,7 +3,7 @@
 @section('title',$data->title)
 
 @section('content')
-<div id="page-wrapper" style="background:#FFFFFF">
+
     <h1>{{$data->title}}</h1>
     <div class="panel panel-default">
         <div class="panel-heading">
@@ -29,11 +29,7 @@
 
                     <tr>
                         <th>Image</th>
-                        <td>
-                            @if ($data->image)
-                                <img src="{{Storage::url($data->image)}}" style="height:300px">
-                            @endif
-                        </td>
+                        <td>{{$data->image}}</td>
                     </tr>
 
                     <tr>
@@ -47,7 +43,7 @@
                     </tr>
 
                     <tr>
-                        <th>Updated at</th>
+                        <th>Updayed at</th>
                         <td>{{$data->updated_at}}</td>
                     </tr>
                 </table>
@@ -59,5 +55,5 @@
             </div>
         </div>
     </div>
-</div>
+
 @endsection

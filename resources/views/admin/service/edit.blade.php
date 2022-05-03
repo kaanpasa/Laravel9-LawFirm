@@ -3,7 +3,7 @@
 @section('title', 'Edit Category: '.$data->title)
 
 @section('content')
-<div id="page-wrapper" style="background:#FFFFFF">
+
     <h1>Edit Category: {{$data->title}}</h1>
     <div class="row">
         <div class="col-md-12">
@@ -15,21 +15,8 @@
                 <div class="panel-body">
                     <div class="row">
                         <div class="col-md-12">
-                            <form role="form" action="{{route('admin.category.update',['id'=>$data->id])}}" method="post" enctype="multipart/form-data">
+                            <form role="form" action="{{route('admin.category.update',['id'=>$data->id])}}" method="post">
                                 @csrf
-
-                                <div class="form-group">
-                                    <label>Parent Category</label>
-
-                                    <select class="form-control select2" name="parent_id">
-                                        <option value="0" selected="selected">Main Category</option>
-                                        @foreach($datalist as $rs)
-                                            <option value="{{$rs->id}}" @if ($rs->id == $data->parent_id) selected="selected" @endif>
-                                                {{\App\Http\Controllers\AdminPanel\CategoryController::getParentsTree($rs, $rs->title)}}
-                                            </option>
-                                        @endforeach
-                                    </select>
-                                </div>
 
                                 <div class="form-group">
                                     <label>Title</label>
@@ -52,6 +39,9 @@
                                         <div class="custom-file">
                                             <input type="file" class="custom-file-input" name="image">
                                             <label class="custom-file-input" for="exampleInputFile">Choose File</label>
+                                        </div>
+                                        <div class="input-group-append">
+                                            <span class="input-group-text" id="">Upload</span>
                                         </div>
                                     </div>
                                 </div>
@@ -77,5 +67,5 @@
             <!-- End Form Elements -->
         </div>
     </div>
-</div>
+
 @endsection
