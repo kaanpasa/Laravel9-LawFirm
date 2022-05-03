@@ -18,7 +18,6 @@
                             <th>Category</th>
                             <th>Title</th>
                             <th>Keywords</th>
-                            <th>Descripton</th>
                             <th>Image</th>
                             <th>Details</th>
                             <th>User Id</th>
@@ -32,13 +31,12 @@
                         @foreach( $data as $rs)
                         <tr>
                             <td>{{$rs->id}}</td>
-                            <td>{{$rs->title}}</td>
+                            <td>{{\App\Http\Controllers\AdminPanel\AdminServicesController::getParentsTree($rs, $rs->title)}}</td>
                             <td>{{$rs->title}}</td>
                             <td>{{$rs->keywords}}</td>
-                            <td>{{$rs->description}}</td>
                             <td>
                                 @if($rs->image)
-                                    <img src="{{Storage::url($rs->image)}}">
+                                    <img src="{{Storage::url($rs->image)}}" style="height:40px">
                                 @endif
                             </td>
                             <td>{{$rs->detail}}</td>

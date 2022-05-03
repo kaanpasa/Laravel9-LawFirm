@@ -13,6 +13,11 @@
             <div class="table-responsive">
                 <table class="table table-striped table-bordered table-hover">
                     <tr>
+                        <th>Category</th>
+                        <td>{{\App\Http\Controllers\AdminPanel\CategoryController::getParentsTree($data, $data->title)}}</td>
+                    </tr>
+
+                    <tr>
                         <th>Title</th>
                         <td>{{$data->title}}</td>
                     </tr>

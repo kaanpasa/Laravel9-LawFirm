@@ -17,7 +17,6 @@
                         <div class="col-md-12">
                             <form role="form" action="{{route('admin.category.store')}}" method="post" enctype="multipart/form-data">
                                 @csrf
-
                                 <div class="form-group">
                                     <label>Parent Category</label>
 

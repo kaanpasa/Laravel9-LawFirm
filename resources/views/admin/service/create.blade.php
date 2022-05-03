@@ -1,9 +1,9 @@
 @extends('layouts.adminbase')
 
-@section('title', 'Service')
+@section('title', ' Add Service')
 
 @section('content')
-
+<div id="page-wrapper" style="background:#FFFFFF">
     <h1>Add Service</h1>
     <div class="row">
         <div class="col-md-12">
@@ -15,8 +15,17 @@
                 <div class="panel-body">
                     <div class="row">
                         <div class="col-md-12">
-                            <form role="form" action="{{route('admin.service.store')}}" method="post">
+                            <form role="form" action="{{route('admin.service.store')}}" method="post" enctype="multipart/form-data">
                                 @csrf
+                                <div class="form-group">
+                                    <label>Category</label>
+
+                                    <select class="form-control select2" name="category_id">
+                                        @foreach($data as $rs)
+                                            <option value="{{$rs->id}}">{{\App\Http\Controllers\AdminPanel\CategoryController::getParentsTree($rs, $rs->title)}}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
 
                                 <div class="form-group">
                                     <label>Title</label>
@@ -47,6 +56,16 @@
                                 </div>
 
                                 <div class="form-group">
+                                    <label>Details</label>
+                                    <input type="text" class="form-control" name="details" placeholder="Details" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label>User Id</label>
+                                    <input type="text" class="form-control" name="user_id" placeholder="User Id" />
+                                </div>
+
+                                <div class="form-group">
                                     <label>Status</label>
                                     <select class="form-control" name="status">
                                         <option>True</option>
@@ -66,5 +85,5 @@
             <!-- End Form Elements -->
         </div>
     </div>
-
+</div>
 @endsection

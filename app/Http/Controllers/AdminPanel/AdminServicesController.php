@@ -9,6 +9,20 @@ use Illuminate\Http\Request;
 
 class AdminServicesController extends Controller
 {
+
+    protected $appends = [
+        'getParentsTree'
+    ];
+
+    public static function getParentsTree($category, $title){
+        if($category->category_id == 0){
+            return $title;
+        }
+        $category = Category::find($category->category_id);
+        $title = $category->title . ' > ' . $title;
+        return CategoryController::getParentsTree($category, $title);
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -44,13 +58,17 @@ class AdminServicesController extends Controller
     public function store(Request $request)
     {
        $data= new Service();
-       $data->category_id = $request->category_id;
-       $data->title = $request->title;
-       $data->keywords = $request->keywords;
-       $data->description = $request->description;
-       $data->status = $request->status;
-       $data->detail = $request->detail;
-       $data->user_id = $request->user_id;
+        $data->category_id = $request->category_id;
+        $data->user_id = 0; //$request->user_id;
+        $data->title = $request->title;
+        $data->detail = $request->detail;
+        $data->keywords = $request->keywords;
+        $data->description = $request->description;
+        $data->status = $request->status;
+        if($request->file('image')){
+            $data->image = $request->file('image')->store('public/images');
+        }
+        $data->detail = $request->detail;
        $data->save();
        return redirect('admin/service');
     }
@@ -81,7 +99,7 @@ class AdminServicesController extends Controller
         $datalist = Category::all();
         return view('admin.service.edit',[
             'data' => $data,
-            'datalist' => $data
+            'datalist' => $datalist
         ]);
     }
 
@@ -96,14 +114,18 @@ class AdminServicesController extends Controller
     {
         $data= Service::find($id);
         $data->category_id = $request->category_id;
+        $data->user_id = 0; //$request->user_id;
         $data->title = $request->title;
+        $data->detail = $request->detail;
         $data->keywords = $request->keywords;
         $data->description = $request->description;
         $data->status = $request->status;
+        if($request->file('image')){
+            $data->image = $request->file('image')->store('public/images');
+        }
         $data->detail = $request->detail;
-        $data->user_id = $request->user_id;
         $data->save();
-        return redirect('admin/Service');
+        return redirect('admin/service');
     }
 
     /**
@@ -115,8 +137,10 @@ class AdminServicesController extends Controller
     public function destroy(Service $Service,$id)
     {
         $data=Service::find($id);
-        Storage::delete($data->image);
+        if($data->image && Storage::disk('public')->exists($data->image)){
+            Storage::delete($data->image);
+        }
         $data->delete();
-        return redirect('admin/Service');
+        return redirect('admin/service');
     }
 }
