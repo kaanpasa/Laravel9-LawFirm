@@ -59,8 +59,6 @@
 
 <script src="/assets/js/theme.js"></script>
 
-<script src="assets/js/slider.js"></script>
-
 <!---- Slider Js ----->
 <script src="assets/js/slider/jquery.min.js"></script>
 

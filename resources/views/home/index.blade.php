@@ -40,7 +40,7 @@
                             <img src="/assets/img/lawyers/oconnor.jpg" alt="">
                         </div>
                         <div class="body">
-                            <p class="text-xl mb-0">Melissa L. O'Connor</p>
+                            <p class="text-xl mb-0">Melissa O'Connor</p>
                             <span class="text-sm text-grey">Civil Litigation</span>
                         </div>
                     </div>

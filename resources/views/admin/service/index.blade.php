@@ -19,7 +19,6 @@
                             <th>Title</th>
                             <th>Keywords</th>
                             <th>Image</th>
-                            <th>Details</th>
                             <th>User Id</th>
                             <th>Status</th>
                             <th style="width: 40px">Edit</th>
@@ -39,7 +38,6 @@
                                     <img src="{{Storage::url($rs->image)}}" style="height:40px">
                                 @endif
                             </td>
-                            <td>{{$rs->detail}}</td>
                             <td>{{$rs->user_id}}</td>
                             <td>{{$rs->status}}</td>
                             <td><a href="{{route('admin.service.edit',['id'=>$rs->id])}}" class="btn btn-info btn-sm">Edit</a></td>
