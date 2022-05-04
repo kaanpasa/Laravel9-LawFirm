@@ -2,9 +2,10 @@
 
 @section('title', 'Pasa Law')
 
-
 @section('content')
 
+    @include("home.slider")
+    @include("home.topbar")
     <!--Our Lawyers https://www.dkmlawgroup.com/attorneys-->
 
     <div class="page-section">

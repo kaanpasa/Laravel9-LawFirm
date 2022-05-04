@@ -23,6 +23,8 @@ Route::get('/welcome', function () {
 
 Route::get('/', [HomeController::class,'index'])->name('home');
 
+Route::get('/service/{id}', [HomeController::class,'service'])->name('service');
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');

@@ -1,5 +1,4 @@
 <header>
-    <!-- topbar -->
     <div class="topbar">
         <div class="container">
             <div class="row">
@@ -17,13 +16,13 @@
                         <a href="https://instagram.com/kaannpasa" target="_blank"><span class="mai-logo-instagram"></span></a>
                     </div>
                 </div>
-            </div> <!-- .row -->
-        </div> <!-- .container -->
-    </div> <!-- .topbar -->
+            </div>
+        </div>
+    </div>
 
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
         <div class="container">
-            <a class="navbar-brand" href="#"><span class="text-primary">Pasa</span>-Law</a>
+            <a class="navbar-brand" href="/"><span class="text-primary">Pasa</span>-Law</a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupport" aria-controls="navbarSupport" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>

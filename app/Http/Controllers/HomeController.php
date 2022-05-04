@@ -17,4 +17,11 @@ class HomeController extends Controller
         ]);
     }
 
+    public function service($id){
+        $data=Service::find($id);
+        return view('home.service',[
+            'data'=>$data
+        ]);
+    }
+
 }
