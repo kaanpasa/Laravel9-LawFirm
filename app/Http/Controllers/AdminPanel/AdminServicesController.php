@@ -19,7 +19,7 @@ class AdminServicesController extends Controller
             return $title;
         }
         $category = Category::find($category->category_id);
-        $title = $category->title . ' > ' . $title;
+        $title = $category->title;
         return CategoryController::getParentsTree($category, $title);
     }
 

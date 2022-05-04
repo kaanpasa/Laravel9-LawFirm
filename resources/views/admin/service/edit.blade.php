@@ -59,8 +59,20 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label>Details</label>
-                                    <input type="text" class="form-control" name="details" value="{{$data->detail}}"/>
+                                    <label>Detail</label>
+                                    <textarea class="form-control" id="detail" name="detail">
+
+                                    </textarea>
+                                    <script>
+                                        ClassicEditor
+                                            .create( document.querySelector( '#detail' ) )
+                                            .then( editor => {
+                                                console.log( editor );
+                                            } )
+                                            .catch( error => {
+                                                console.error( error );
+                                            } );
+                                    </script>
                                 </div>
 
                                 <div class="form-group">
