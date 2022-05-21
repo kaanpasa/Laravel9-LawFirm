@@ -8337,3 +8337,62 @@ h1, h2, h3, h4, h5,
 .owl-carousel.owl-drag .owl-item {
   -ms-touch-action: pan-y;
   touch-action: pan-y; }
+
+
+.w3dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.w3dropdown .w3dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.w3dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.w3dropdown-content a {
+  float: none;
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.w3dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.w3dropdown:hover .w3dropdown-content {
+  display: block;
+}
+.w3dropdown-menu li {
+position: relative;
+}
+.w3dropdown-menu .w3dropdown-submenu {
+display: none;
+position: absolute;
+left: 100%;
+top: -7px;
+}
+.w3dropdown-menu .w3dropdown-submenu-left {
+right: 100%;
+left: auto;
+}
+.w3dropdown-menu > li:hover > .w3dropdown-submenu {
+display: block;
+}

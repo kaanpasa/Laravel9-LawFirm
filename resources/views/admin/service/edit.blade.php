@@ -60,9 +60,7 @@
 
                                 <div class="form-group">
                                     <label>Detail</label>
-                                    <textarea class="form-control" id="detail" name="detail">
-
-                                    </textarea>
+                                    <textarea class="form-control" id="detail" name="detail" value="{{$data->detail}}">{{$data->detail}}</textarea>
                                     <script>
                                         ClassicEditor
                                             .create( document.querySelector( '#detail' ) )

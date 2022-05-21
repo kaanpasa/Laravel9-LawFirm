@@ -29,7 +29,7 @@
             </div>
             <div class="col-sm-6 col-lg-3 py-3">
                 <h5>Contact</h5>
-                <p class="footer-link mt-2">Karabuk University Teknokent, Karabuk/Karabuk, Turkey</p>
+                <a href="https://goo.gl/maps/gqHSMLxAjADKh9yo7" target="_blank" class="footer-link mt-2">Karabuk University Teknokent, Karabuk/Karabuk, Turkey</a>
                 <a href="#" class="footer-link">553-136-8640</a><br>
                 <a href="#" class="footer-link">info@pasalaw.com</a>
 

@@ -12,8 +12,10 @@ class HomeController extends Controller
     //
     public function index(){
         $sliderdata=photo::all();
+        $data=Category::all();
         return view('home.index',[
-            'sliderdata'=>$sliderdata
+            'sliderdata'=>$sliderdata,
+            'data'=>$data
         ]);
     }
 
@@ -22,6 +24,10 @@ class HomeController extends Controller
         return view('home.service',[
             'data'=>$data
         ]);
+    }
+
+    public static function maincategorylist(){
+        return Category::where('parent_id', '=', 0)->with('children')->get();
     }
 
 }

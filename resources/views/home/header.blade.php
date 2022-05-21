@@ -27,7 +27,9 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupport" aria-controls="navbarSupport" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
+            @php
+                $mainCategories = \App\Http\Controllers\HomeController::maincategorylist();
+            @endphp
             <div class="collapse navbar-collapse" id="navbarSupport">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
@@ -36,8 +38,30 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/admin">About</a>
                     </li>
+                    <li class="nav-item w3dropdown">
+                        <a class="nav-link dropdown-toggle w3dropbtn" href="/service/1">Categories</a>
+                        <ul class="category-list w3dropdown-content">
+                            @foreach($mainCategories as $rs)
+                            <li class="dropdown side-dropdown" aria-expanded="true">
+                                <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">{{$rs->title}}</a>
+                                <div class="custom-menu">
+                                    <div class="row">
+                                        @if(count($rs->children))
+                                            @include('home.categorytree',['children'=>$rs->children])
+                                        @endif
+                                    </div>
+                                </div>
+                            </li>
+                            @endforeach
+                        </ul>
+                    </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/admin">Services</a>
+                        <a class="nav-link dropdown-toggle w3dropbtn" href="/service/1">Services</a>
+                        <ul class="category-list w3dropdown-content">
+                            <li class="dropdown side-dropdown" aria-expanded="true">
+                                <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Civil Law</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="doctors.html">Lawyers</a>
