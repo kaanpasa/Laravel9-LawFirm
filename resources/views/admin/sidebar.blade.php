@@ -47,7 +47,7 @@
                 </li>
 
                 <li>
-                    <a href="/admin/settings"><ion-icon name="settings" size="large"></ion-icon>  Settings</a>
+                    <a href="/admin/setting"><ion-icon name="settings" size="large"></ion-icon>  Settings</a>
                 </li>
             </ul>
         </div>
