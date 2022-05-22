@@ -1,13 +1,19 @@
 @foreach($children as $subcategory)
-    <ul class="w3dropdown-content nav-link">
+    <ul class="nav-item ">
         @if(count($subcategory->children))
-            <li class="dropdown side-dropdown">{{$subcategory->title}}</li>
-            <ul class="w3dropbtn">
-                @include('home.categorytree',['children'=>$subcategory->children])
+            <li class="dropdown side-dropdown">
+                <a class="nav-link dropdown-toggle " href="#" >{{$subcategory->title}}</a>
+            </li>
+            <ul class="category-list w3dropdown-content">
+                <li >
+                    @include('home.categorytree',['children'=>$subcategory->children])
+                </li>
             </ul>
             <hr>
         @else
-            <li><a href="{{route('categoryservices',['id'=>$subcategory->id, 'slug'=>$subcategory->title])}}">{{$subcategory->title}}</a></li>
+            <li class="dropdown side-dropdown" aria-expanded="true">
+                <a href="{{route('categoryservices',['id'=>$subcategory->id, 'slug'=>$subcategory->title])}}">{{$subcategory->title}}</a>
+            </li>
         @endif
     </ul>
 @endforeach

@@ -22,7 +22,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
         <div class="container">
-            <a class="navbar-brand" href="/"><span class="text-primary">Pasa</span>-Law</a>
+            <a class="navbar-brand" href="{{route('home')}}"><span class="text-primary">Pasa</span>-Law</a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupport" aria-controls="navbarSupport" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -42,8 +42,8 @@
                         <a class="nav-link dropdown-toggle w3dropbtn" href="/service/1">Categories</a>
                         <ul class="category-list w3dropdown-content">
                             @foreach($mainCategories as $rs)
-                            <li class="dropdown side-dropdown" aria-expanded="true">
-                                <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">{{$rs->title}}</a>
+                            <li class=" nav-item dropdown side-dropdown" aria-expanded="true">
+                                <a href="{{route('categoryservices',['id'=>$rs->id, 'slug'=>$rs->title])}}" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">{{$rs->title}}</a>
                                 <div class="custom-menu">
                                     <div class="row">
                                         @if(count($rs->children))
@@ -53,14 +53,6 @@
                                 </div>
                             </li>
                             @endforeach
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link dropdown-toggle w3dropbtn" href="/service/1">Services</a>
-                        <ul class="category-list w3dropdown-content">
-                            <li class="dropdown side-dropdown" aria-expanded="true">
-                                <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Civil Law</a>
-                            </li>
                         </ul>
                     </li>
                     <li class="nav-item">

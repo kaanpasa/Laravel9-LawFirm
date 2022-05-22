@@ -2,8 +2,6 @@
 
 @section('title', $data->title)
 
-
-
 @section('content')
     <div class="page-section pt-3">
         <div class="container">

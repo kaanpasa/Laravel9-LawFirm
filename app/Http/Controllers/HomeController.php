@@ -6,6 +6,7 @@ use App\Models\Category;
 use App\Models\photo;
 use App\Models\Service;
 use Illuminate\Http\Request;
+use DB;
 
 class HomeController extends Controller
 {
@@ -23,6 +24,15 @@ class HomeController extends Controller
         $data=Service::find($id);
         return view('home.service',[
             'data'=>$data
+        ]);
+    }
+
+    public function categoryservices($id){
+        $category = Category::find($id);
+        $services = DB::table('services')->where('category_id', $id)->get();
+        return view('home.categoryservices',[
+            'category'=>$category,
+            'services'=>$services
         ]);
     }
 

@@ -8338,7 +8338,7 @@ h1, h2, h3, h4, h5,
   -ms-touch-action: pan-y;
   touch-action: pan-y; }
 
-
+//Addition*****************************************************************************************
 .w3dropdown {
   float: left;
   overflow: hidden;
@@ -8396,3 +8396,4 @@ left: auto;
 .w3dropdown-menu > li:hover > .w3dropdown-submenu {
 display: block;
 }
+
