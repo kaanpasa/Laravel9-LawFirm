@@ -42,7 +42,7 @@
                         <a class="nav-link dropdown-toggle w3dropbtn" href="/service/1">Categories</a>
                         <ul class="category-list w3dropdown-content">
                             @foreach($mainCategories as $rs)
-                            <li class=" nav-item dropdown side-dropdown" aria-expanded="true">
+                            <li class="nav-item dropdown side-dropdown" aria-expanded="true">
                                 <a href="{{route('categoryservices',['id'=>$rs->id, 'slug'=>$rs->title])}}" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">{{$rs->title}}</a>
                                 <div class="custom-menu">
                                     <div class="row">

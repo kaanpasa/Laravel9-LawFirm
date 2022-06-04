@@ -2,7 +2,7 @@
     <ul class="nav-item ">
         @if(count($subcategory->children))
             <li class="dropdown side-dropdown">
-                <a class="nav-link dropdown-toggle " href="#" >{{$subcategory->title}}</a>
+                <a class="nav-link dropdown-toggle " href="{{route('categoryservices',['id'=>$category->id, 'slug'=>$category->title])}}" >{{$category->title}}</a>
             </li>
             <ul class="category-list w3dropdown-content">
                 <li >

@@ -2,6 +2,11 @@
 
 @section('title', 'Edit Service: '.$data->title)
 
+@section('head')
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js" rel="stylesheet">
+
+@endsection
+
 @section('content')
 <div id="page-wrapper" style="background:#FFFFFF">
     <h1>Edit Service: {{$data->title}}</h1>
@@ -101,3 +106,13 @@
     </div>
 </div>
 @endsection
+@section('foot')
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+
+    <script>
+        $(function(){
+            $('.textarea').summernote()
+        })
+    </script>
+@endsection
+
