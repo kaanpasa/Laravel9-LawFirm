@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Category;
 use App\Models\photo;
 use App\Models\Service;
+use App\Models\Setting;
 use Illuminate\Http\Request;
 use DB;
 
@@ -14,7 +15,9 @@ class HomeController extends Controller
     public function index(){
         $sliderdata=photo::all();
         $data=Category::all();
+        $setting=Setting::first();
         return view('home.index',[
+            'setting'=>$setting,
             'sliderdata'=>$sliderdata,
             'data'=>$data
         ]);

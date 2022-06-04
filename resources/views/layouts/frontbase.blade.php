@@ -1,14 +1,15 @@
-<html>
+<!DOCTYPE html>
     <head>
         <title>@yield('title')</title>
+        <meta name="description" content="@yield("description")">
+        <meta name="keywords" content="@yield("keywords")">
+        <meta name="author" content="@yield("Kaan Pasa")">
+        <link rel="icon" type="image/x-icon" href="@yield("icon")">
         @yield('head')
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="copyright" content="Kaan Pasa, https://github.com/kaanpasa">
-        <link rel="icon" type="image/x-icon" href="/favicon.ico">
-        <title>@yield("title")</title>
-
         <link rel="stylesheet" href="/assets/css/maicons.css">
         <link rel="stylesheet" href="/assets/vendor/animate/animate.css">
         <link rel="stylesheet" href="/assets/css/bootstrap.css">

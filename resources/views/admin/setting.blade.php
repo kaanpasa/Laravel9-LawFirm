@@ -15,6 +15,8 @@
                 </div>
             <hr>
 
+        <form role="form" action="{{route('admin.setting.update')}}" method="post" enctype="multipart/form-data">
+            @csrf
             <div>
                 <div class="panel panel-default">
                     <div class="panel-heading">
@@ -82,6 +84,15 @@
                                         <option>False</option>
                                     </select>
                                 </div>
+
+                                <div class="form-group">
+                                    <label for="exampleInputFile">Icon</label>
+                                    <div class="input-group">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" name="icon">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="tab-pane fade in" id="smtp">
@@ -129,7 +140,7 @@
                             <div class="tab-pane fade in" id="about">
                                 <div class="form-group">
                                     <label>About Us</label>
-                                    <textarea id="abo" name="aboutus" value="{!! $data->aboutus !!}" class="form-control"></textarea>
+                                    <textarea id="abo" name="aboutus" value="{{$data->aboutus}}" class="form-control">{!! $data->aboutus !!}</textarea>
                                     <script>
                                         ClassicEditor
                                             .create( document.querySelector( '#abo' ) )
@@ -146,7 +157,7 @@
                             <div class="tab-pane fade in" id="contact">
                                 <div class="form-group">
                                     <label>Contact</label>
-                                    <textarea id="con" name="contact" value="{{$data->contact}}" class="form-control"></textarea>
+                                    <textarea id="con" name="contact" value="{{$data->contact}}" class="form-control">{!! $data->contact !!}</textarea>
                                     <script>
                                         ClassicEditor
                                             .create( document.querySelector( '#con' ) )
@@ -163,7 +174,7 @@
                             <div class="tab-pane fade in" id="references">
                                 <div class="form-group">
                                     <label>References</label>
-                                    <textarea id="ref" name="references" value="{{$data->references}}" class="form-control"></textarea>
+                                    <textarea id="ref" name="references" value="{{$data->references}}" class="form-control">{!! $data->references !!}</textarea>
                                     <script>
                                         ClassicEditor
                                             .create( document.querySelector( '#ref' ) )
@@ -184,6 +195,7 @@
                     </div>
                 </div>
             </div>
+        </form>
         </div>
 @endsection
 @section('foot')

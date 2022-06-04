@@ -37,7 +37,17 @@
 
                                 <div class="form-group"><!--Description form element-->
                                     <label>Description</label>
-                                    <input type="text" class="form-control" name="description" placeholder="Description" />
+                                    <textarea id="des" type="text" class="form-control" name="description" placeholder="Description"></textarea>
+                                    <script>
+                                        ClassicEditor
+                                            .create( document.querySelector( '#des' ) )
+                                            .then( editor => {
+                                                console.log( editor );
+                                            } )
+                                            .catch( error => {
+                                                console.error( error );
+                                            } );
+                                    </script>
                                 </div>
 
                                 <div class="form-group"><!--Image form element-->
