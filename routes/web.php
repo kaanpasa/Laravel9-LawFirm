@@ -20,8 +20,11 @@ use App\Http\Controllers\AdminPanel\CategoryController as CategoryController;
 Route::get('/welcome', function () {
     return view('welcome');
 });
-
+// *************************** HOME PAGE ROUTES *********************
 Route::get('/', [HomeController::class,'index'])->name('home');
+Route::get('/aboutus', [HomeController::class,'aboutus'])->name('aboutus');
+Route::get('/references', [HomeController::class,'references'])->name('references');
+Route::get('/contact', [HomeController::class,'contact'])->name('contact');
 
 Route::get('/service/{id}', [HomeController::class,'service'])->name('service');
 Route::get('/categoryservices/{id}/{slug}', [HomeController::class,'categoryservices'])->name('categoryservices');

@@ -33,10 +33,10 @@
             <div class="collapse navbar-collapse" id="navbarSupport">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="/#">Home</a>
+                        <a class="nav-link" href="{{route('home')}}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/admin">About</a>
+                        <a class="nav-link" href="/admin">Admin</a>
                     </li>
                     <li class="nav-item w3dropdown">
                         <a class="nav-link dropdown-toggle w3dropbtn" href="/service/1">Categories</a>
@@ -56,13 +56,16 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="doctors.html">Lawyers</a>
+                        <a class="nav-link" href="/blog.html">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="blog.html">Blog</a>
+                        <a class="nav-link" href="{{route('aboutus')}}">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link" href="{{route('contact')}}">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('references')}}">References</a>
                     </li>
                     <li class="nav-item">
                         <a class="btn btn-primary ml-lg-3" href="#">Login / Register</a>

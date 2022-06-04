@@ -878,11 +878,11 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .breadcrumb-dark .breadcrumb-item a {
-  color: #00D9A5;
+  color: #A0522D;
 }
 
 .breadcrumb-dark .breadcrumb-item a:hover {
-  color: #07be94;
+  color: #A0522D;
   text-decoration: none;
 }
 
@@ -935,7 +935,7 @@ a.text-dark:hover, a.text-dark:focus {
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .nav-link.active {
   font-weight: 500;
-  color: #00D9A5;
+  color: #A0522D;
 }
 
 
@@ -1027,8 +1027,8 @@ a.text-dark:hover, a.text-dark:focus {
 .page-item.active .page-link {
   z-index: 3;
   color: #fff;
-  background-color: #00D9A5;
-  border-color: #00D9A5;
+  background-color: #A0522D;
+  border-color: #A0522D;
 }
 
 .page-item.disabled .page-link {
@@ -1173,7 +1173,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .back-to-top:hover {
-  background: #00D9A5;
+  background: #A0522D;
 }
 
 .back-to-top:hover::after {
@@ -1247,7 +1247,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .input-navbar .input-group-text {
   background-color: #fff;
-  color: #00D9A5;
+  color: #A0522D;
 }
 
 .input-navbar .form-control {
@@ -1445,7 +1445,7 @@ a.text-dark:hover, a.text-dark:focus {
 .card-blog .post-title:hover,
 .card-blog .post-title a:hover {
   text-decoration: none;
-  color: #07be94;
+  color: #A0522D;
 }
 
 .card-blog .site-info {
@@ -1500,7 +1500,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .blog-details .post-meta a:hover {
-  color: #07be94;
+  color: #A0522D;
   text-decoration: none;
 }
 
@@ -1572,13 +1572,13 @@ a.text-dark:hover, a.text-dark:focus {
   top: 5px;
   right: 6px;
   padding: 6px 12px;
-  background-color: #00D9A5;
+  background-color: #A0522D;
   color: #fff;
   transition: all .2s ease;
 }
 
 .search-form .btn:hover {
-  background-color: #07be94;
+  background-color: #A0522D;
 }
 
 .categories {
@@ -1653,7 +1653,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .blog-item .post-title a:hover {
-  color: #07be94;
+  color: #A0522D;
   text-decoration: none;
 }
 
@@ -1688,8 +1688,8 @@ a.text-dark:hover, a.text-dark:focus {
 .tag-cloud-link:focus {
   text-decoration: none;
   background-color: #f8f9fa;
-  color: #07be94;
-  border-color: #07be94;
+  color: #A0522D;
+  border-color: #A0522D;
 }
 
 .main-form {
@@ -1700,7 +1700,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .banner-home {
   padding: 0;
-  background-color: #00D9A5;
+  background-color: #A0522D;
   color: #fff;
 }
 
