@@ -28,9 +28,9 @@ Route::get('/aboutus', [HomeController::class,'aboutus'])->name('aboutus');
 Route::get('/references', [HomeController::class,'references'])->name('references');
 Route::get('/contact', [HomeController::class,'contact'])->name('contact');
 Route::post('/storemessage', [HomeController::class,'storemessage'])->name('storemessage');
-
 Route::get('/service/{id}', [HomeController::class,'service'])->name('service');
 Route::get('/categoryservices/{id}/{slug}', [HomeController::class,'categoryservices'])->name('categoryservices');
+Route::get('/faq', [HomeController::class,'faq'])->name('faq');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
