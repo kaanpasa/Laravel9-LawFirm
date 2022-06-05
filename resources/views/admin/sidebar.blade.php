@@ -43,7 +43,7 @@
                 </li>
 
                 <li>
-                    <a  href="/admin/messages"><ion-icon name="chatbubble" size="large"></ion-icon></i>  Messages</a>
+                    <a  href="{{route('admin.message.index')}}"><ion-icon name="chatbubble" size="large"></ion-icon></i>  Messages</a>
                 </li>
 
                 <li>

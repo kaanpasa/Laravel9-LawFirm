@@ -4,10 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Models\Category;
 use App\Models\photo;
+use App\Models\Message;
 use App\Models\Service;
 use App\Models\Setting;
 use Illuminate\Http\Request;
-use DB;
+use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
@@ -62,6 +63,20 @@ class HomeController extends Controller
         return view('home.contact',[
             'setting'=>$setting,
         ]);
+    }
+
+    public function storemessage(Request $request){
+        //dd($request);
+        $data = new Message();
+        $data->name = $request->input('name');
+        $data->email = $request->input('email');
+        $data->phone = $request->input('phone');
+        $data->subject = $request->input('subject');
+        $data->message = $request->input('message');
+        $data->ip = request()->ip();
+        $data->save();
+
+        return redirect()->route('contact')->with('info','Your message has been sent, thank you.');
     }
 
 }

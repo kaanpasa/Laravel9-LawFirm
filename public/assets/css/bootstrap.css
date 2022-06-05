@@ -2654,6 +2654,7 @@ fieldset:disabled a.btn {
   color: #fff;
   background-color: #218838;
   border-color: #1e7e34;
+  cursor:pointer;
 }
 
 .btn-success:focus, .btn-success.focus {
