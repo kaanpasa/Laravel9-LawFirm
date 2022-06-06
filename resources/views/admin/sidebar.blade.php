@@ -35,7 +35,7 @@
                 </li>
 
                 <li>
-                    <a  href="/admin/comments"><ion-icon name="chatbox" size="large"></ion-icon></i>  Comments</a>
+                    <a  href="{{route('admin.comment.index')}}"><ion-icon name="chatbox" size="large"></ion-icon></i>  Comments</a>
                 </li>
 
                 <li>

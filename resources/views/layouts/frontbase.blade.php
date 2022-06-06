@@ -20,6 +20,9 @@
         <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
         <link rel="stylesheet" href="/assets/css/ionicons.min.css">
         <link rel="stylesheet" href="/assets/css/style.css">
+        <!--Rating CSS-->
+        <link rel="stylesheet" href="/assets/css/pasa.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
     <body class="bg-light">

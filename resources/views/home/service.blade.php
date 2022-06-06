@@ -2,6 +2,11 @@
 
 @section('title', $data->title)
 
+@section('head')
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+@endsection
+
 @section('content')
     <div class="page-section pt-3">
         <div class="container">
@@ -52,34 +57,83 @@
                             <a href="#" class="tag-link">Civil Law</a>
                             <a href="#" class="tag-link">Family Law</a>
                         </div>
+                        <h2>Reviews</h2>
+                        @foreach($reviews as $rs)
+                            <div>
+                                {{$rs->user->name}}
+                                {{$rs->created_at}}
+                                <strong>{{$rs->rate}} stars</strong>
+                            </div>
+                            <div>
+                                <strong>{{$rs->subject}}</strong>
+                                <p>{{$rs->review}}</p>
+                            </div>
+                        @endforeach
+
+                        @auth
+                            <div class="comment-form-wrap pt-5">
+                                <h3 class="mb-5">Write Your Review</h3>
+                                <form action="{{route('storecomment')}}" method="post">
+                                    @csrf
+                                    <div class="form-row form-group">
+                                        <input class="input" type="hidden" name="service_id" value="{{$data->id}}">
+                                        <div class="col-md-6">
+                                            <label for="name">Name *</label>
+                                            <input type="text" class="form-control" id="name" name="name">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="email">Email *</label>
+                                            <input type="email" class="form-control" id="email" name="email">
+                                        </div>
+                                    </div>
+                                    <div class="form-row form-group">
+                                        <div class=" col-md-9">
+                                            <label for="subject">Subject</label>
+                                            <input type="text" class="form-control" id="subject" name="subject">
+                                        </div>
+
+                                        <div class=" col-md-3">
+                                            <strong>Your Rating: </strong>
+                                            <div style="width:300px;">
+                                                <select>
+                                                    <option value="0">Select a rate:</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--star
+                                    <div class="form-row form-group">
+                                        <div class="box">
+                                            <a class="b1"><ion-icon name="star"></ion-icon></a>
+                                            <a class="b2"><ion-icon name="star"></ion-icon></a>
+                                            <a class="b3"><ion-icon name="star"></ion-icon></a>
+                                            <a class="b4"><ion-icon name="star"></ion-icon></a>
+                                            <a class="b5"><ion-icon name="star"></ion-icon></a>
+                                        </div>
+                                    </div>
+                                    -->
+                                    <div class="form-group">
+                                        <label for="review">Review</label>
+                                        <textarea name="review" id="review" cols="30" rows="8" class="form-control"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="submit" value="Submit" class="btn btn-primary">
+                                    </div>
+                                </form>
+                            </div>
+                        @else
+                            <a href="/login" class="btn btn-primary">Login for submit a review</a>
+                        @endauth
                     </article> <!-- .blog-details -->
 
-                    <div class="comment-form-wrap pt-5">
-                        <h3 class="mb-5">Leave a comment</h3>
-                        <form action="#" class="">
-                            <div class="form-row form-group">
-                                <div class="col-md-6">
-                                    <label for="name">Name *</label>
-                                    <input type="text" class="form-control" id="name">
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="email">Email *</label>
-                                    <input type="email" class="form-control" id="email">
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="message">Message *</label>
-                                <textarea name="msg" id="message" cols="30" rows="8" class="form-control"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <input type="submit" value="Post Comment" class="btn btn-primary">
-                            </div>
-
-                        </form>
-                    </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4"><!--Sidebar-->
                     <div class="sidebar">
                         <div class="sidebar-block">
                             <h3 class="sidebar-title">Categories</h3>

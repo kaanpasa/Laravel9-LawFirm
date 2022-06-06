@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminPanel\AdminServicesController;
+use App\Http\Controllers\AdminPanel\CommentController;
 use App\Http\Controllers\AdminPanel\FaqController;
 use App\Http\Controllers\AdminPanel\MessageController;
 use App\Http\Controllers\HomeController;
@@ -31,6 +32,7 @@ Route::post('/storemessage', [HomeController::class,'storemessage'])->name('stor
 Route::get('/service/{id}', [HomeController::class,'service'])->name('service');
 Route::get('/categoryservices/{id}/{slug}', [HomeController::class,'categoryservices'])->name('categoryservices');
 Route::get('/faq', [HomeController::class,'faq'])->name('faq');
+Route::post('/storecomment', [HomeController::class,'storecomment'])->name('storecomment');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
@@ -66,6 +68,14 @@ Route::prefix('/admin')->name('admin.')->group(function() {
 
 //**************************** ADMIN MESSAGE ROUTES ********************
     Route::prefix('/message')->name('message.')->controller(MessageController::class)->group(function() {
+        Route::get('/','index')->name('index');
+        Route::post('/update/{id}', 'update')->name('update');
+        Route::get('/destroy/{id}', 'destroy')->name('destroy');
+        Route::get('/show/{id}', 'show')->name('show');
+    });
+
+//**************************** ADMIN COMMENT ROUTES ********************
+    Route::prefix('/comment')->name('comment.')->controller(CommentController::class)->group(function() {
         Route::get('/','index')->name('index');
         Route::post('/update/{id}', 'update')->name('update');
         Route::get('/destroy/{id}', 'destroy')->name('destroy');

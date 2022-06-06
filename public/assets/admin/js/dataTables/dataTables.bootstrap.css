@@ -146,7 +146,7 @@ div.DTTT .btn:hover {
 }
 
 ul.DTTT_dropdown.dropdown-menu {
-    z-index: 2003;
+    z-index: 9999;
 }
 
 ul.DTTT_dropdown.dropdown-menu a {
