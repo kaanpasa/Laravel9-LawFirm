@@ -33,6 +33,9 @@ Route::get('/service/{id}', [HomeController::class,'service'])->name('service');
 Route::get('/categoryservices/{id}/{slug}', [HomeController::class,'categoryservices'])->name('categoryservices');
 Route::get('/faq', [HomeController::class,'faq'])->name('faq');
 Route::post('/storecomment', [HomeController::class,'storecomment'])->name('storecomment');
+Route::view('/loginuser','home.login');
+Route::view('/registeruser','home.register');
+Route::get('/logoutuser',[HomeController::class,'logout'])->name('logoutuser');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');

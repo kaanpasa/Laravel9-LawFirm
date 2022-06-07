@@ -67,9 +67,19 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{route('references')}}">References</a>
                     </li>
+                    @auth
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{route('references')}}"><b>Welcome {{Auth::user()->name}}</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-primary ml-lg-3"><a href="/logoutuser" style="color:white">Logout</a></button>
+                        </li>
+                    @endauth
+                    @guest
                     <li class="nav-item">
-                        <a class="btn btn-primary ml-lg-3" href="#">Login / Register</a>
+                        <button class="btn btn-primary ml-lg-3"><a href="/loginuser" style="color:white">Login </a> / <a href="/registeruser" style="color:white">Register</a></button>
                     </li>
+                    @endguest
                 </ul>
             </div> <!-- .navbar-collapse -->
         </div> <!-- .container -->

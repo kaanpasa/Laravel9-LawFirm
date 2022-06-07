@@ -107,4 +107,14 @@ class HomeController extends Controller
         return redirect()->route('service',['id'=>$request->input('service_id')])->with('info','Your comment has been sent, thank you.');
     }
 
+    public function logout(Request $request){
+        Auth::logout();
+
+        $request->session()->invalidate();
+
+        $request->session()->regenerateToken();
+
+        return redirect('/');
+    }
+
 }
