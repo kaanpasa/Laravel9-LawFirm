@@ -45,8 +45,22 @@
                                 <a href="#">{{$data->category->title}}</a>
                             </div>
                             <span class="divider">|</span>
+                            <div class="form-row form-group">
+                                <div class="box">
+                                    @php
+                                        $average = round($data->comment->average('rate'))
+                                    @endphp
+                                    {{$average}}
+                                    <a class="b1"><ion-icon @if ($average<1) name="star-outline" @else name="star" @endif></ion-icon></a>
+                                    <a class="b2"><ion-icon @if ($average<2) name="star-outline" @else name="star" @endif></ion-icon></a>
+                                    <a class="b3"><ion-icon @if ($average<3) name="star-outline" @else name="star" @endif></ion-icon></a>
+                                    <a class="b4"><ion-icon @if ($average<4) name="star-outline" @else name="star" @endif></ion-icon></a>
+                                    <a class="b5"><ion-icon @if ($average<5) name="star-outline" @else name="star" @endif></ion-icon></a>
+                                </div>
+                            </div>
+                            <span class="divider">|</span>
                             <div class="post-comment-count">
-                                <a href="#">8 Comments</a>
+                                <a href="#">{{$data->comment->count('id')}} Review(s) / Add Review</a>
                             </div>
                         </div>
                         <h2 class="post-title h1">{{$data->title}}</h2>
@@ -57,12 +71,13 @@
                             <a href="#" class="tag-link">Civil Law</a>
                             <a href="#" class="tag-link">Family Law</a>
                         </div>
-                        <h2>Reviews</h2>
+                        <h2>Reviews ({{$data->comment->count('id')}})</h2>
                         @foreach($reviews as $rs)
                             <div>
                                 {{$rs->user->name}}
                                 {{$rs->created_at}}
                                 <strong>{{$rs->rate}} stars</strong>
+
                             </div>
                             <div>
                                 <strong>{{$rs->subject}}</strong>
@@ -95,7 +110,7 @@
                                         <div class=" col-md-3">
                                             <strong>Your Rating: </strong>
                                             <div style="width:300px;">
-                                                <select>
+                                                <select name="rate">
                                                     <option value="0">Select a rate:</option>
                                                     <option value="1">1</option>
                                                     <option value="2">2</option>
