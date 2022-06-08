@@ -36,7 +36,7 @@
                         <a class="nav-link" href="{{route('home')}}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/admin">Admin</a>
+                        <a class="nav-link" href="/loginadmin">Admin</a>
                     </li>
                     <li class="nav-item w3dropdown">
                         <a class="nav-link dropdown-toggle w3dropbtn" href="/service/1">Categories</a>
