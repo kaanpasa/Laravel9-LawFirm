@@ -71,9 +71,9 @@
                         <li class="nav-item w3dropdown">
                             <a class="nav-link w3dropbtn" href="{{route('userpanel.index')}}"><b>{{Auth::user()->name}}</b></a>
                             <ul class="category-list w3dropdown-content" style="list-style-type:none">
-                                <li><a class="nav-item dropdown side-dropdown" href="{{route('userpanel.index')}}">My Account</a></li>
-                                <li><a class="nav-item dropdown side-dropdown" href="#">My Appointments</a></li>
-                                <li><a class="nav-item dropdown side-dropdown" href="#">My Reviews</a></li>
+                                <li><a href="{{route('userpanel.index')}}">My Account</a></li>
+                                <li><a href="#">My Appointments</a></li>
+                                <li><a href="{{route('userpanel.comments')}}">My Comments</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">

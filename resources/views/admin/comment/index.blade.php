@@ -6,7 +6,7 @@
     <div id="page-wrapper" style="background:#FFFFFF">
         <div class="panel panel-default" style="margin-top: 20px">
             <div class="panel-heading">
-                Comments % Reviews
+                Comments & Reviews
             </div>
             <div class="panel-body">
                 <div class="table-responsive">
