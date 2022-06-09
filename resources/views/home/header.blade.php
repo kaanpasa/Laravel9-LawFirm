@@ -39,13 +39,13 @@
                         <a class="nav-link" href="/loginadmin">Admin</a>
                     </li>
                     <li class="nav-item w3dropdown">
-                        <a class="nav-link dropdown-toggle w3dropbtn" href="/service/1">Categories</a>
-                        <ul class="category-list w3dropdown-content">
+                        <a class="nav-link w3dropbtn" href="#">Categories</a>
+                        <ul class="category-list w3dropdown-content" style="list-style-type:none">
                             @foreach($mainCategories as $rs)
                             <li class="nav-item dropdown side-dropdown" aria-expanded="true">
-                                <a href="{{route('categoryservices',['id'=>$rs->id, 'slug'=>$rs->title])}}" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">{{$rs->title}}</a>
+                                <a href="{{route('categoryservices',['id'=>$rs->id, 'slug'=>$rs->title])}}" data-toggle="dropdown" aria-expanded="true">{{$rs->title}}</a>
                                 <div class="custom-menu">
-                                    <div class="row">
+                                    <div class="row" style="margin-left:10px">
                                         @if(count($rs->children))
                                             @include('home.categorytree',['children'=>$rs->children])
                                         @endif
@@ -68,8 +68,13 @@
                         <a class="nav-link" href="{{route('references')}}">References</a>
                     </li>
                     @auth
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{route('references')}}"><b>Welcome {{Auth::user()->name}}</b></a>
+                        <li class="nav-item w3dropdown">
+                            <a class="nav-link w3dropbtn" href="{{route('userpanel.index')}}"><b>{{Auth::user()->name}}</b></a>
+                            <ul class="category-list w3dropdown-content" style="list-style-type:none">
+                                <li><a class="nav-item dropdown side-dropdown" href="{{route('userpanel.index')}}">My Account</a></li>
+                                <li><a class="nav-item dropdown side-dropdown" href="#">My Appointments</a></li>
+                                <li><a class="nav-item dropdown side-dropdown" href="#">My Reviews</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <button class="btn btn-primary ml-lg-3"><a href="/logoutuser" style="color:white">Logout</a></button>
