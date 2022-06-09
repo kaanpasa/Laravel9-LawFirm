@@ -26,6 +26,13 @@ class UserController extends Controller
         ]);
     }
 
+    public function appointments(){
+        $data=Appointment::where('user_id','=',Auth::id())->get();
+        return view('home.user.appointments',[
+            'data'=>$data,
+        ]);
+    }
+
 
     /**
      * Show the form for creating a new resource.

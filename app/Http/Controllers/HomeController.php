@@ -13,6 +13,7 @@ use App\Models\RoleUser;
 use App\Models\Service;
 use App\Models\Setting;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
 
@@ -93,7 +94,7 @@ class HomeController extends Controller
         $data->ip = request()->ip();
         $data->save();
 
-        return redirect()->route('contact')->with('info','Your appointment has created, thank you.');
+        return redirect()->route('contact')->with('info','Your message has been sent, thank you.');
     }
 
     public function storecomment(Request $request){
@@ -123,7 +124,7 @@ class HomeController extends Controller
         $data->IP = request()->ip();
         $data->save();
 
-        return redirect()->back()->with('info','Your comment has been sent, thank you.');
+        return redirect()->back()->with('info','Your Appointment has created, thank you.');
     }
 
     public function logout(Request $request){

@@ -12,26 +12,30 @@
         <div class="panel-body">
             <div class="table-responsive">
                 <table class="table table-striped table-bordered table-hover">
-
                     <tr>
                         <th>Id</th>
                         <td>{{$data->id}}</td>
                     </tr>
 
                     <tr>
-                        <th>Name</th>
-                        <td>{{$data->name}}</td>
+                        <th>User Id</th>
+                        <td>{{$data->user_id}}</td>
                     </tr>
 
                     <tr>
-                        <th>Email</th>
-                        <td>{{$data->email}}</td>
+                        <th>Service Id</th>
+                        <td>{{$data->service_id}}</td>
                     </tr>
 
                     <tr>
-                        <th>Phone</th>
-                        <td>{{$data->phone}}</td>
+                        <th>Date</th>
+                        <td>{{$data->date}}</td>
 
+                    </tr>
+
+                    <tr>
+                        <th>Time</th>
+                        <td>{{$data->time}}</td>
                     </tr>
 
                     <tr>
@@ -40,19 +44,25 @@
                     </tr>
 
                     <tr>
-                        <th>Message</th>
-                        <td>{{$data->message}}</td>
+                        <th>Price</th>
+                        <td>{{$data->price}}</td>
                     </tr>
 
                     <tr>
-                        <th>Ip Address</th>
-                        <td>{{$data->ip}}</td>
+                        <th>Payment</th>
+                        <td>{{$data->payment}}</td>
+                    </tr>
+
+                    <tr>
+                        <th>IP</th>
+                        <td>{{$data->IP}}</td>
                     </tr>
 
                     <tr>
                         <th>Status</th>
                         <td>{{$data->status}}</td>
                     </tr>
+
 
                     <tr>
                         <th>Created at</th>
