@@ -2,7 +2,7 @@
 
 @section('title', "FAQ")
 @section('head')
-    <link rel="stylesheet" href="/assets/admin/css/pasa.css">
+    <link rel="stylesheet" href="/assets/css/pasa.css">
 @endsection
 @section('content')
 

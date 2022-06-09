@@ -1,5 +1,6 @@
 <head>
     <link href="/assets/admin/css/pasa.css" rel="stylesheet" />
+    <link href="/assets/admin/css/bootstrap.css" rel="stylesheet" />
     <title>Admin Login</title>
 </head>
 <body>
@@ -14,14 +15,14 @@
             <label for="password"><b>Password</b></label><br>
             <input type="password" placeholder="Enter Password" name="password" required><br>
 
-            <button type="submit">Login</button><br>
+            <button type="submit" style="color:white">Login</button><br>
             <label>
                 <input type="checkbox" checked="checked" name="remember"> Remember me
             </label>
         </div>
 
         <div style="background-color:#ffffff">
-            <button type="button" class="cancelbtn">Cancel</button>
+            <button type="abutton" class="cancelbtn" style="color:white; margin-bottom: 10px">Cancel</button>
             <span class="psw" style="margin-right: 15px">Forgot <a href="#">password?</a></span>
         </div>
     </form>

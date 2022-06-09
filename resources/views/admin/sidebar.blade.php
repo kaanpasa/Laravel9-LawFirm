@@ -2,6 +2,7 @@
     <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
         @include("admin.header")
         <div style="color: white; padding: 15px 50px 5px 50px; float: right; font-size: 16px;">
+            {{Auth::user()->name}}
             <a class="btn btn-danger square-btn-adjust" href="/logoutuser">Logout</a>
         </div>
     </nav>
