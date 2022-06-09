@@ -17,7 +17,7 @@
                     <div class="row"><!-- -->
                         <div class="col-sm-6 py-3">
                             @foreach($services as $rs)
-                            <div class="card-blog">
+                            <div class="card-blog ">
                                 <div class="header">
                                     <div class="post-category">
                                         <a href="/categoryservices/{{$category->id}}">{{$category->title}}</a>
@@ -39,30 +39,26 @@
                                     </div>
                                 </div>
                             </div>
+                                <br>
                             @endforeach
                         </div>
 
                     </div> <!-- .row -->
                 </div>
-                <div class="col-lg-4"><!--Right Bar-->
+                <div class="col-lg-4"><!--Sidebar-->
                     <div class="sidebar">
                         <div class="sidebar-block">
-                            <h3 class="sidebar-title">Recent Blog</h3>
-                            <div class="blog-item">
-                                <a class="post-thumb" href="">
-                                    <img src="/assets/img/blog/blog_1.jpg" alt="">
-                                </a>
-                                <div class="content">
-                                    <h5 class="post-title"><a href="#">Even the all-powerful Pointing has no control</a></h5>
-                                    <div class="meta">
-                                        <a href="#"><span class="mai-calendar"></span> July 12, 2018</a>
-                                        <a href="#"><span class="mai-person"></span> Admin</a>
-                                        <a href="#"><span class="mai-chatbubbles"></span> 19</a>
-                                    </div>
-                                </div>
-                            </div>
+                            <h3 class="sidebar-title">Categories</h3>
+                            <ul class="categories">
+                                <li><a href="/categoryservices/17/Equality%20Law">Equality Law</a></li>
+                                <li><a href="/categoryservices/18/Corporate%20Law">Corporate Law</a></li>
+                                <li><a href="/categoryservices/11/Family%20Law">Family Law</a></li>
+                                <li><a href="#">Procedural Law</a></li>
+                                <li><a href="#">Business Law</a></li>
+                                <li><a href="#">Civil Law</a></li>
+                                <li><a href="#">Commercial Law</a></li>
+                            </ul>
                         </div>
-
                     </div>
                 </div>
             </div> <!-- .row -->

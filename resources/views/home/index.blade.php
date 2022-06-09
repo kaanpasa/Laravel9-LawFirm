@@ -109,7 +109,7 @@
                 @csrf
                 <div class="row mt-5 ">
                     <div class="col-12 col-sm-6 py-2 wow fadeInLeft" data-wow-delay="300ms">
-                        <input name="date" type="date" class="form-control">
+                        <input name="date" type="date" class="form-control" min="<?php echo date('Y-m-d');?>">
                     </div>
                     <div class="col-12 col-sm-6 py-2 wow fadeInLeft" data-wow-delay="300ms">
                         <select name="time" class="custom-select">

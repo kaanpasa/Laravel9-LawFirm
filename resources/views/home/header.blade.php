@@ -35,9 +35,6 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="{{route('home')}}">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/loginadmin">Admin</a>
-                    </li>
                     <li class="nav-item w3dropdown">
                         <a class="nav-link w3dropbtn" href="#">Categories</a>
                         <ul class="category-list w3dropdown-content" style="list-style-type:none">
@@ -74,6 +71,9 @@
                                 <li><a href="{{route('userpanel.index')}}">My Account</a></li>
                                 <li><a href="#">My Appointments</a></li>
                                 <li><a href="{{route('userpanel.comments')}}">My Comments</a></li>
+                                @if(Auth::user()->id == 1)
+                                <li><a href="/loginadmin">Admin</a></li>
+                                @endif
                             </ul>
                         </li>
                         <li class="nav-item">
