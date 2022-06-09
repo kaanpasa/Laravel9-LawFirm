@@ -15,14 +15,12 @@
                     <nav aria-label="Breadcrumb">
                         <ol class="breadcrumb bg-transparent py-0 mb-5">
                             <li class="breadcrumb-item"><a href="/">Home</a></li>
-                            <li class="breadcrumb-item"><a href="/services">Services</a></li>
-                            <li class="breadcrumb-item"><a href="#">{{$data->category->title}}</a></li>
+                            <li class="breadcrumb-item"><a href="{{route('categoryservices',['id'=>$data->category->id, 'slug'=>$data->category->title])}}">{{$data->category->title}}</a></li>
                             <li class="breadcrumb-item active" aria-current="page">{{$data->title}}</li>
                         </ol>
                     </nav>
                 </div>
             </div> <!-- .row -->
-
 
             <div class="row">
                 <div class="col-lg-8">
@@ -71,7 +69,7 @@
                             <a href="#" class="tag-link">Civil Law</a>
                             <a href="#" class="tag-link">Family Law</a>
                         </div>
-                        <h2>Reviews ({{$data->comment->count('id')}})</h2>
+                        <h2>Reviews ({{$reviews->count('id')}})</h2>
                         @foreach($reviews as $rs)
                             <div>
                                 {{$rs->user->name}}
@@ -122,17 +120,6 @@
                                         </div>
                                     </div>
 
-                                    <!--star
-                                    <div class="form-row form-group">
-                                        <div class="box">
-                                            <a class="b1"><ion-icon name="star"></ion-icon></a>
-                                            <a class="b2"><ion-icon name="star"></ion-icon></a>
-                                            <a class="b3"><ion-icon name="star"></ion-icon></a>
-                                            <a class="b4"><ion-icon name="star"></ion-icon></a>
-                                            <a class="b5"><ion-icon name="star"></ion-icon></a>
-                                        </div>
-                                    </div>
-                                    -->
                                     <div class="form-group">
                                         <label for="review">Review</label>
                                         <textarea name="review" id="review" cols="30" rows="8" class="form-control"></textarea>

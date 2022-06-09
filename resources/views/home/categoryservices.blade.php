@@ -3,7 +3,7 @@
 @section('title',$category->title . ' Services')
 
 @section('content')
-    <nav aria-label="Breadcrumb">
+    <nav aria-label="Breadcrumb" style="margin-top:20px">
         <ol class="breadcrumb bg-transparent py-0 mb-5">
             <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">{{$category->title}}</li>

@@ -5,6 +5,7 @@ use App\Http\Controllers\AdminPanel\AdminUserController;
 use App\Http\Controllers\AdminPanel\CommentController;
 use App\Http\Controllers\AdminPanel\FaqController;
 use App\Http\Controllers\AdminPanel\MessageController;
+use App\Http\Controllers\AppointmentController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
@@ -40,6 +41,7 @@ Route::view('/registeruser','home.register')->name('registeruser');
 Route::get('/logoutuser',[HomeController::class,'logout'])->name('logoutuser');
 Route::view('/loginadmin','admin.login')->name('loginadmin');
 Route::post('/loginadmincheck',[HomeController::class,'loginadmincheck'])->name('loginadmincheck');
+Route::post('/storeappointment', [HomeController::class,'storeappointment'])->name('storeappointment');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
@@ -52,6 +54,7 @@ Route::middleware('auth')->group(function(){
         Route::get('/','index')->name('index');
         Route::get('/comments','comments')->name('comments');
         Route::get('/commentdestroy/{id}', 'commentdestroy')->name('commentdestroy');
+        Route::get('/appointments','appointments')->name('appointments');
     });
 
     // *************************** ADMIN PANEL  ROUTES *********************
@@ -119,6 +122,14 @@ Route::middleware('auth')->group(function(){
             Route::post('/addrole/{id}', 'addrole')->name('addrole');
             Route::get('/destroyrole/{uid}/{rid}', 'destroyrole')->name('destroyrole');
         });
+    //**************************** ADMIN APPOINTMENT ROUTES ********************
+    Route::prefix('/appointment')->name('appointment.')->controller(AppointmentController::class)->group(function() {
+        Route::get('/','index')->name('index');
+        Route::get('/new','new')->name('new');
+        Route::post('/update/{id}', 'update')->name('update');
+        Route::get('/destroy/{id}', 'destroy')->name('destroy');
+        Route::get('/show/{id}', 'show')->name('show');
+    });
     });
 });
 

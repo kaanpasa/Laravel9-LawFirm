@@ -1,13 +1,13 @@
 @extends('layouts.adminwindow')
 
-@section('title', 'User Detail: '.$data->name)
+@section('title', 'Show Appointment')
 
 @section('content')
 <div style="margin:10px">
     <h1>{{$data->title}}</h1>
     <div class="panel panel-default">
         <div class="panel-heading">
-            User detail: {{$data->name}}
+            Detailed Appointment Data
         </div>
         <div class="panel-body">
             <div class="table-responsive">
@@ -29,14 +29,29 @@
                     </tr>
 
                     <tr>
-                        <th>Roles</th>
-                        <td>
-                            @foreach($data->roles as $role)
-                                {{$role->name}}
-                                <a href="{{route('admin.user.destroyrole',['uid'=>$data->id, 'rid'=>$role->id])}}"
-                                   onclick="return confirm('Are you sure to delete?')">[×]</a>
-                            @endforeach
-                        </td>
+                        <th>Phone</th>
+                        <td>{{$data->phone}}</td>
+
+                    </tr>
+
+                    <tr>
+                        <th>Subject</th>
+                        <td>{{$data->subject}}</td>
+                    </tr>
+
+                    <tr>
+                        <th>Message</th>
+                        <td>{{$data->message}}</td>
+                    </tr>
+
+                    <tr>
+                        <th>Ip Address</th>
+                        <td>{{$data->ip}}</td>
+                    </tr>
+
+                    <tr>
+                        <th>Status</th>
+                        <td>{{$data->status}}</td>
                     </tr>
 
                     <tr>
@@ -50,23 +65,19 @@
                     </tr>
 
                     <tr>
-                        <th>Add Role to User</th>
+                        <th>Admin Note</th>
                         <td>
-                            <form role="form" action="{{route('admin.user.addrole', ['id'=>$data->id])}}" method="post" enctype="multipart/form-data">
+                            <form role="form" action="{{route('admin.appointment.update', ['id'=>$data->id])}}" method="post" enctype="multipart/form-data">
                                 @csrf
-                                <select name="role_id">
-                                    @foreach($roles as $role)
-                                        <option value="{{$role->id}}">{{$role->name}}</option>
-                                    @endforeach
-                                </select>
-                                <button type="submit" class="btn btn-primary">Add Role</button>
+                                <textarea cols="100" id="note" name="note">{{$data->note}}</textarea><br>
+                                <button type="submit" class="btn btn-primary">Update Note</button>
                             </form>
                         </td>
                     </tr>
                 </table>
             </div>
             <div style="text-align: right">
-            <a href="{{route('admin.user.destroy',['id'=>$data->id])}}" class="btn btn-danger btn-sm"
+            <a href="{{route('admin.appointment.destroy',['id'=>$data->id])}}" class="btn btn-danger btn-sm"
                    onclick="return confirm('Are you sure to delete?')">Delete</a>
             </div>
         </div>

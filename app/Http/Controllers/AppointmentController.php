@@ -3,11 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Appointment;
-use App\Models\Comment;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 
-class UserController extends Controller
+class AppointmentController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,16 +14,18 @@ class UserController extends Controller
      */
     public function index()
     {
-        return view('home.user.index');
-    }
-
-    public function comments(){
-        $comments=Comment::where('user_id','=',Auth::id())->get();
-        return view('home.user.comments',[
-            'comments'=>$comments,
+        $data = Appointment::all();
+        return view('admin.appointment.index',[
+            'data' => $data
         ]);
     }
-
+    public function new()
+    {
+        $data = Appointment::where('status','New')->get();
+        return view('admin.appointment.new',[
+            'data' => $data
+        ]);
+    }
 
     /**
      * Show the form for creating a new resource.
@@ -34,7 +34,10 @@ class UserController extends Controller
      */
     public function create()
     {
-        //
+        $data = Appointment::all();
+        return view('admin.appointment.create',[
+            'data' => $data
+        ]);
     }
 
     /**
@@ -56,7 +59,12 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        //
+        $data=Appointment::find($id);
+        $data->status='Read';
+        $data->save();
+        return view('admin.appointment.show',[
+            'data' => $data
+        ]);
     }
 
     /**
@@ -79,7 +87,10 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $data=Appointment::find($id);
+        $data->note = $request->note;
+        $data->save();
+        return redirect(route('admin.appointment.show',['id'=>$id]));
     }
 
     /**
@@ -90,13 +101,8 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        //
-    }
-
-    public function commentdestroy($id)
-    {
-        $data=Comment::find($id);
+        $data=Appointment::find($id);
         $data->delete();
-        return redirect(route('userpanel.comments'));
+        return redirect(route('admin.appointment.index'));
     }
 }

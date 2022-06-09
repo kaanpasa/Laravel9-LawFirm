@@ -29,7 +29,7 @@
                                 <td>{{$rs->id}}</td>
                                 <td>{{\App\Http\Controllers\AdminPanel\CategoryController::getParentsTree($rs, $rs->title)}}</td><!--Parent title from CategoryController-->
                                 <td>{{$rs->title}}</td>
-                                <td>{{$rs->description}}</td>
+                                <td>{!! $rs->description !!}</td>
                                 <td>
                                     @if ($rs->image)<!--Checks if there is image or not-->
                                     <img src="{{Storage::url($rs->image)}}" style="height:40px">

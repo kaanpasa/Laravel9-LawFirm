@@ -12,7 +12,7 @@
             <hr>
         @else
             <li class="dropdown side-dropdown" aria-expanded="true">
-                <a href="{{route('categoryservices',['id'=>$subcategory->id, 'slug'=>$subcategory->title])}}">{{$subcategory->title}}</a>
+                <a href="{{route('categoryservices',['id'=>$subcategory->id, 'slug'=>$subcategory->title])}}">>{{$subcategory->title}}</a>
             </li>
         @endif
     </ul>

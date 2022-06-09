@@ -98,128 +98,55 @@
         </div>
     </div>
 
-    <!-- Blog bölümü -->
-    <div class="page-section bg-light">
-        <div class="container">
-            <h1 class="text-center wow fadeInUp">Latest Blog</h1>
-            <div class="row mt-5">
-                <div class="col-lg-4 py-2 wow zoomIn">
-                    <div class="card-blog">
-                        <div class="header">
-                            <div class="post-category">
-                                <a href="#">Bar</a>
-                            </div>
-                            <a href="blog-details.html" class="post-thumb">
-                                <img src="/assets/img/blog/kripto.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="body">
-                            <h5 class="post-title"><a href="blog-details.html">Cancellation of Zoning Plan</a></h5>
-                            <div class="site-info">
-                                <div class="avatar mr-2">
-                                    <div class="avatar-img">
-                                        <img src="/assets/img/person/pasa.jpeg" alt="">
-                                    </div>
-                                    <span>Kaan Pasa</span>
-                                </div>
-                                <span class="mai-time"></span> 1 week ago
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 py-2 wow zoomIn">
-                    <div class="card-blog">
-                        <div class="header">
-                            <div class="post-category">
-                                <a href="#">Covid19</a>
-                            </div>
-                            <a href="blog-details.html" class="post-thumb">
-                                <img src="/assets/img/blog/kripto.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="body">
-                            <h5 class="post-title"><a href="blog-details.html">Criptocurrency Law</a></h5>
-                            <div class="site-info">
-                                <div class="avatar mr-2">
-                                    <div class="avatar-img">
-                                        <img src="/assets/img/person/pasa.jpeg" alt="">
-                                    </div>
-                                    <span>Kaan Pasa</span>
-                                </div>
-                                <span class="mai-time"></span> 4 weeks ago
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 py-2 wow zoomIn">
-                    <div class="card-blog">
-                        <div class="header">
-                            <div class="post-category">
-                                <a href="#">Covid19</a>
-                            </div>
-                            <a href="blog-details.html" class="post-thumb">
-                                <img src="/assets/img//blog/kripto.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="body">
-                            <h5 class="post-title"><a href="blog-details.html">Work accident Report</a></h5>
-                            <div class="site-info">
-                                <div class="avatar mr-2">
-                                    <div class="avatar-img">
-                                        <img src="/assets/img/person/pasa.jpeg" alt="">
-                                    </div>
-                                    <span>Kaan Pasa</span>
-                                </div>
-                                <span class="mai-time"></span> 2 months ago
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 text-center mt-4 wow zoomIn">
-                    <a href="blog.html" class="btn btn-primary">Read More</a>
-                </div>
-
-            </div>
-        </div>
-    </div> <!-- .page-section -->
-
     <!--Make an Appointment-->
 
     <div class="page-section">
         <div class="container">
             <h1 class="text-center wow fadeInUp">Make an Appointment</h1>
-
-            <form class="main-form">
+            @include('home.messages')
+            @auth
+            <form class="main-form" action="{{route('storeappointment')}}" method="post">
+                @csrf
                 <div class="row mt-5 ">
-                    <div class="col-12 col-sm-6 py-2 wow fadeInLeft">
-                        <input type="text" class="form-control" placeholder="Full name">
-                    </div>
-                    <div class="col-12 col-sm-6 py-2 wow fadeInRight">
-                        <input type="text" class="form-control" placeholder="Email address..">
+                    <div class="col-12 col-sm-6 py-2 wow fadeInLeft" data-wow-delay="300ms">
+                        <input name="date" type="date" class="form-control">
                     </div>
                     <div class="col-12 col-sm-6 py-2 wow fadeInLeft" data-wow-delay="300ms">
-                        <input type="date" class="form-control">
+                        <select name="time" class="custom-select">
+                            <option>09:00</option><option>10:00</option><option>11:00</option><option>13:00</option>
+                            <option>14:00</option><option>15:00</option><option>16:00</option><option>17:00</option>
+                            <option>18:00</option><option>19:00</option>
+                        </select>
                     </div>
                     <div class="col-12 col-sm-6 py-2 wow fadeInRight" data-wow-delay="300ms">
-                        <select name="departement" id="departement" class="custom-select">
+                        <select name="service_id" id="service_id" class="custom-select">
                             @foreach($data as $rs)
-                            <option value="{{$rs->title}}">{{$rs->title}}</option>
+                            <option value="{{$rs->id}}">{{$rs->title}}</option>
                             @endforeach
                         </select>
                     </div>
-                    <div class="col-12 py-2 wow fadeInUp" data-wow-delay="300ms">
-                        <input type="text" class="form-control" placeholder="Number..">
-                    </div>
-                    <div class="col-12 py-2 wow fadeInUp" data-wow-delay="300ms">
-                        <textarea name="message" id="message" class="form-control" rows="6" placeholder="Enter message.."></textarea>
+                    <div class="col-12 col-sm-6 py-2 wow fadeInUp" data-wow-delay="300ms">
+                        <input name="subject" type="text" class="form-control" placeholder="Subject..">
                     </div>
                 </div>
 
                 <button type="submit" class="btn btn-primary mt-3 wow zoomIn">Submit Request</button>
             </form>
+            @endauth
+            @guest
+                <div class="row" >
+                    <div class="col-lg-8">
+                        <h4 class="alert alert-info">Please Login or Register For Make An Appointment</h4>
+                    </div>
+                    <div class="col-lg-4" style="text-align:center">
+                        <button class="btn btn-primary ml-lg-3" style="margin-top:10px"><a href="/loginuser" style="color:white">Login </a> / <a href="/registeruser" style="color:white">Register</a></button>
+                    </div>
+                </div>
+            @endguest
         </div>
     </div>
+
+
 
 
 @endsection

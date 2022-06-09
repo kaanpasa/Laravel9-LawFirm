@@ -14,11 +14,11 @@
                     <a href="#"><ion-icon name="briefcase" size="large"></ion-icon>  Appointments<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="#">  New Appointments</a>
+                            <a href="{{route('admin.appointment.new')}}">  New Appointments</a>
                         </li>
 
                         <li>
-                            <a href="#">  Completed Appointments</a>
+                            <a href="{{route('admin.appointment.index')}}">  Completed Appointments</a>
                         </li>
                     </ul>
                 </li>

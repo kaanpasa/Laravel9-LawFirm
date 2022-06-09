@@ -2,11 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Appointment;
 use App\Models\Category;
 use App\Models\Comment;
 use App\Models\Faq;
 use App\Models\photo;
 use App\Models\Message;
+use App\Models\Role;
+use App\Models\RoleUser;
 use App\Models\Service;
 use App\Models\Setting;
 use Illuminate\Http\Request;
@@ -23,7 +26,7 @@ class HomeController extends Controller
         return view('home.index',[
             'setting'=>$setting,
             'sliderdata'=>$sliderdata,
-            'data'=>$data
+            'data'=>$data,
         ]);
     }
 
@@ -90,7 +93,7 @@ class HomeController extends Controller
         $data->ip = request()->ip();
         $data->save();
 
-        return redirect()->route('contact')->with('info','Your message has been sent, thank you.');
+        return redirect()->route('contact')->with('info','Your appointment has created, thank you.');
     }
 
     public function storecomment(Request $request){
@@ -101,10 +104,26 @@ class HomeController extends Controller
         $data->subject = $request->input('subject');
         $data->review = $request->input('review');
         $data->rate = $request->input('rate');
-        $data->ip = request()->ip();
+        $data->IP = request()->ip();
         $data->save();
 
         return redirect()->route('service',['id'=>$request->input('service_id')])->with('info','Your comment has been sent, thank you.');
+    }
+
+    public function storeappointment(Request $request){
+        //dd($request);
+        $data = new Appointment();
+        $data->user_id = Auth::id();
+        $data->service_id = $request->input('service_id');
+        $data->date = $request->input('date');
+        $data->time = $request->input('time');
+        $data->subject = $request->input('subject');
+        $data->price = 20;
+        $data->payment = 'No';
+        $data->IP = request()->ip();
+        $data->save();
+
+        return redirect()->back()->with('info','Your comment has been sent, thank you.');
     }
 
     public function logout(Request $request){
