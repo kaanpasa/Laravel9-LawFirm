@@ -31,7 +31,7 @@
                 </li>
 
                 <li>
-                    <a  href="/admin/users"><ion-icon name="person" size="large"></ion-icon>  Users</a>
+                    <a  href="/admin/user"><ion-icon name="person" size="large"></ion-icon>  Users</a>
                 </li>
 
                 <li>
